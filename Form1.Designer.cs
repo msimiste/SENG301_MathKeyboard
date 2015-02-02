@@ -39,6 +39,7 @@
             System.Windows.Forms.Button num9;
             System.Windows.Forms.Button num0;
             System.Windows.Forms.Button button7;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cmdShift = new System.Windows.Forms.CheckBox();
             this.cmdCaps = new System.Windows.Forms.CheckBox();
@@ -232,6 +233,7 @@
             this.Controls.Add(num2);
             this.Controls.Add(num3);
             this.Controls.Add(num1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
