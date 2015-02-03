@@ -39,6 +39,8 @@
             System.Windows.Forms.Button num9;
             System.Windows.Forms.Button num0;
             System.Windows.Forms.Button button7;
+            System.Windows.Forms.Button cmdSuperscript;
+            System.Windows.Forms.Button cmdSubscript;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cmdShift = new System.Windows.Forms.CheckBox();
@@ -53,6 +55,8 @@
             num9 = new System.Windows.Forms.Button();
             num0 = new System.Windows.Forms.Button();
             button7 = new System.Windows.Forms.Button();
+            cmdSuperscript = new System.Windows.Forms.Button();
+            cmdSubscript = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -215,12 +219,40 @@
             this.cmdCaps.UseVisualStyleBackColor = false;
             this.cmdCaps.CheckedChanged += new System.EventHandler(this.cmdCaps_CheckedChanged);
             // 
+            // cmdSuperscript
+            // 
+            cmdSuperscript.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            cmdSuperscript.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            cmdSuperscript.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            cmdSuperscript.Location = new System.Drawing.Point(826, 36);
+            cmdSuperscript.Name = "cmdSuperscript";
+            cmdSuperscript.Size = new System.Drawing.Size(75, 75);
+            cmdSuperscript.TabIndex = 14;
+            cmdSuperscript.Text = "super\r\nscript\r\n\r\n";
+            cmdSuperscript.UseVisualStyleBackColor = false;
+            cmdSuperscript.Click += new System.EventHandler(this.cmdSuperscript_Click);
+            // 
+            // cmdSubscript
+            // 
+            cmdSubscript.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            cmdSubscript.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            cmdSubscript.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            cmdSubscript.Location = new System.Drawing.Point(826, 106);
+            cmdSubscript.Name = "cmdSubscript";
+            cmdSubscript.Size = new System.Drawing.Size(75, 75);
+            cmdSubscript.TabIndex = 15;
+            cmdSubscript.Text = "sub\r\nscript\r\n\r\n";
+            cmdSubscript.UseVisualStyleBackColor = false;
+            cmdSubscript.Click += new System.EventHandler(this.cmdSubscript_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1372, 410);
+            this.Controls.Add(cmdSubscript);
+            this.Controls.Add(cmdSuperscript);
             this.Controls.Add(this.cmdCaps);
             this.Controls.Add(this.cmdShift);
             this.Controls.Add(button7);

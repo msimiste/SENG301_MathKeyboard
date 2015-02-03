@@ -28,8 +28,6 @@ namespace WindowsFormsApplication2
 
         private void num1_Click(object sender, EventArgs e)
         {
-            
-
             if (cmdCaps.Checked || cmdShift.Checked)
             {
                 SendKeys.Send("∮");
@@ -147,7 +145,7 @@ namespace WindowsFormsApplication2
                 cmdShift.Checked = false;
             }
             else
-                SendKeys.Send("9");
+                SendKeys.SendWait("9");
         }
 
         private void num0_Click(object sender, EventArgs e)
@@ -159,6 +157,16 @@ namespace WindowsFormsApplication2
             }
             else
                 SendKeys.Send("0");
+        }
+
+        private void cmdSuperscript_Click(object sender, EventArgs e)
+        {
+            SendKeys.SendWait("^+(=)");
+        }
+
+        private void cmdSubscript_Click(object sender, EventArgs e)
+        {
+            SendKeys.SendWait("^(=)");
         }
 
  
