@@ -60,8 +60,11 @@
             this.Biconditional = new System.Windows.Forms.Button();
             this.MainButtonPanel = new System.Windows.Forms.Panel();
             this.LinkToSetTheory = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.LinkToMain = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.MainButtonPanel.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -246,6 +249,7 @@
             this.Intersection.TabIndex = 16;
             this.Intersection.Text = "⋂";
             this.Intersection.UseVisualStyleBackColor = false;
+            this.Intersection.Click += new System.EventHandler(this.Intersection_Click);
             // 
             // CurlyBrackets
             // 
@@ -493,18 +497,49 @@
             this.LinkToSetTheory.UseVisualStyleBackColor = false;
             this.LinkToSetTheory.Click += new System.EventHandler(this.LinkToSetTheory_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel2.Controls.Add(this.LinkToMain);
+            this.panel2.Location = new System.Drawing.Point(94, 370);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(85, 55);
+            this.panel2.TabIndex = 18;
+            // 
+            // LinkToMain
+            // 
+            this.LinkToMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LinkToMain.BackColor = System.Drawing.Color.Maroon;
+            this.LinkToMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkToMain.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LinkToMain.Image = ((System.Drawing.Image)(resources.GetObject("LinkToMain.Image")));
+            this.LinkToMain.Location = new System.Drawing.Point(3, 2);
+            this.LinkToMain.MaximumSize = new System.Drawing.Size(100, 100);
+            this.LinkToMain.Name = "LinkToMain";
+            this.LinkToMain.Size = new System.Drawing.Size(80, 50);
+            this.LinkToMain.TabIndex = 14;
+            this.LinkToMain.UseVisualStyleBackColor = false;
+            this.LinkToMain.Click += new System.EventHandler(this.LinkToMain_Click);
+            // 
             // MainKeyboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(328, 492);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.MainButtonPanel);
             this.Controls.Add(this.panel1);
             this.Name = "MainKeyboard";
             this.Text = "MainKeyboard";
+            this.Load += new System.EventHandler(this.MainKeyboard_Load);
+            this.Click += new System.EventHandler(this.MainKeyboard_Click);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainKeyboard_MouseClick);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.MainButtonPanel.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -542,6 +577,12 @@
         private System.Windows.Forms.Button Biconditional;
         private System.Windows.Forms.Panel MainButtonPanel;
         private System.Windows.Forms.Button LinkToSetTheory;
-        private SetTheory_Logic SetTheory1 = new SetTheory_Logic();
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button LinkToMain;
+        private Helpers Help1 = new Helpers();
+        //public Greek 
+        //public Greek Greek1 = new Greek();
+       // public 
+       //public  SetTheory_Logic SetTheory1 = new SetTheory_Logic();
     }
 }

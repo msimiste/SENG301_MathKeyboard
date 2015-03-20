@@ -58,7 +58,10 @@ namespace MathKeyBoard
 
         private void Existential_Click(object sender, EventArgs e)
         {
-            SendKeys.Send("∃");
+           
+            SendKeys.Send(((Button) sender).Text); 
+            //SendKeys.Send(()
+            ///SendKeys.Send("∃");
         }
 
         private void brackets_Click(object sender, EventArgs e)
@@ -71,12 +74,12 @@ namespace MathKeyBoard
             SendKeys.Send("¬");
         }
 
-        private void button1_Click_2(object sender, EventArgs e)
-        {             
-            SetTheory1.Show();
-            SetTheory1.TopMost = true;   
+        //private void button1_Click_2(object sender, EventArgs e)
+        //{             
+        //    Greek1.Show();
+        //    Greek1.TopMost = true;   
            
-        }
+        //}
 
         private void Conjunction_Click(object sender, EventArgs e)
         {
@@ -125,7 +128,7 @@ namespace MathKeyBoard
 
         private void RealNumbers_Click(object sender, EventArgs e)
         {
-
+            SendKeys.Send("ℝ");
         }
 
         private void EmptySet_Click(object sender, EventArgs e)
@@ -147,5 +150,80 @@ namespace MathKeyBoard
         {
 
         }
+
+        private void Union_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("⋃");
+        }
+
+        private void Subset_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("⊂");
+        }
+
+        private void SuperSet_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("⊃");
+        }
+
+        private void NotSubset_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("⊄");
+        }
+
+        private void NotSuperset_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("⊅");
+        }
+
+        private void RationalNumbers_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("ℚ");
+        }
+
+        private void NaturalNumbers_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("ℕ");
+        }
+
+        private void Integers_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("ℤ");
+        }
+
+        private void Element_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("∈");
+        }
+
+        private void NotElement_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("∉");
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LInkToGreek_Click(object sender, EventArgs e)
+        {
+            if (Help1.FormOpen("Greek"))
+            {
+                Greek Greek1 = new Greek();
+                Greek1.Show();
+                Greek1.TopMost = true;
+            }
+            else
+                Help1.getOpenForm(this.ParentForm, "Greek").Focus();
+               
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+     
     }
 }

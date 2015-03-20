@@ -1,6 +1,6 @@
 ﻿namespace MathKeyBoard
 {
-    partial class SetTheory_Logic
+     partial class SetTheory_Logic
     {
         /// <summary>
         /// Required designer variable.
@@ -13,12 +13,12 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            this.Hide();
-            //if (disposing && (components != null))
-            //{
-            //    components.Dispose();
-            //}
-            //base.Dispose(disposing);
+            //this.Hide();
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
         }
 
    
@@ -60,10 +60,10 @@
             this.Intersection = new System.Windows.Forms.Button();
             this.CurlyBrackets = new System.Windows.Forms.Button();
             this.EmptySet = new System.Windows.Forms.Button();
-            this.LinkToMain = new System.Windows.Forms.Button();
-            this.MainButtonPanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.LInkToGreek = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.MainButtonPanel.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Biconditional
@@ -324,6 +324,7 @@
             this.NaturalNumbers.TabIndex = 27;
             this.NaturalNumbers.Text = "ℕ";
             this.NaturalNumbers.UseVisualStyleBackColor = false;
+            this.NaturalNumbers.Click += new System.EventHandler(this.NaturalNumbers_Click);
             // 
             // Integers
             // 
@@ -336,6 +337,7 @@
             this.Integers.TabIndex = 26;
             this.Integers.Text = "ℤ";
             this.Integers.UseVisualStyleBackColor = false;
+            this.Integers.Click += new System.EventHandler(this.Integers_Click);
             // 
             // RealNumbers
             // 
@@ -361,6 +363,7 @@
             this.RationalNumbers.TabIndex = 24;
             this.RationalNumbers.Text = "ℚ";
             this.RationalNumbers.UseVisualStyleBackColor = false;
+            this.RationalNumbers.Click += new System.EventHandler(this.RationalNumbers_Click);
             // 
             // NotSubset
             // 
@@ -373,6 +376,7 @@
             this.NotSubset.TabIndex = 23;
             this.NotSubset.Text = "⊄";
             this.NotSubset.UseVisualStyleBackColor = false;
+            this.NotSubset.Click += new System.EventHandler(this.NotSubset_Click);
             // 
             // NotSuperset
             // 
@@ -385,6 +389,7 @@
             this.NotSuperset.TabIndex = 22;
             this.NotSuperset.Text = "⊅";
             this.NotSuperset.UseVisualStyleBackColor = false;
+            this.NotSuperset.Click += new System.EventHandler(this.NotSuperset_Click);
             // 
             // Subset
             // 
@@ -397,6 +402,7 @@
             this.Subset.TabIndex = 21;
             this.Subset.Text = "⊂";
             this.Subset.UseVisualStyleBackColor = false;
+            this.Subset.Click += new System.EventHandler(this.Subset_Click);
             // 
             // SuperSet
             // 
@@ -409,6 +415,7 @@
             this.SuperSet.TabIndex = 20;
             this.SuperSet.Text = "⊃";
             this.SuperSet.UseVisualStyleBackColor = false;
+            this.SuperSet.Click += new System.EventHandler(this.SuperSet_Click);
             // 
             // NotElement
             // 
@@ -421,6 +428,7 @@
             this.NotElement.TabIndex = 19;
             this.NotElement.Text = "∉";
             this.NotElement.UseVisualStyleBackColor = false;
+            this.NotElement.Click += new System.EventHandler(this.NotElement_Click);
             // 
             // Element
             // 
@@ -434,6 +442,7 @@
             this.Element.TabIndex = 18;
             this.Element.Text = "∈";
             this.Element.UseVisualStyleBackColor = false;
+            this.Element.Click += new System.EventHandler(this.Element_Click);
             // 
             // Union
             // 
@@ -446,6 +455,7 @@
             this.Union.TabIndex = 17;
             this.Union.Text = "⋃";
             this.Union.UseVisualStyleBackColor = false;
+            this.Union.Click += new System.EventHandler(this.Union_Click);
             // 
             // Intersection
             // 
@@ -486,31 +496,32 @@
             this.EmptySet.UseVisualStyleBackColor = false;
             this.EmptySet.Click += new System.EventHandler(this.EmptySet_Click);
             // 
-            // LinkToMain
+            // panel2
             // 
-            this.LinkToMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel2.Controls.Add(this.LInkToGreek);
+            this.panel2.Location = new System.Drawing.Point(12, 364);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(85, 55);
+            this.panel2.TabIndex = 17;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // LInkToGreek
+            // 
+            this.LInkToGreek.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LinkToMain.BackColor = System.Drawing.Color.Maroon;
-            this.LinkToMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LinkToMain.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LinkToMain.Image = ((System.Drawing.Image)(resources.GetObject("LinkToMain.Image")));
-            this.LinkToMain.Location = new System.Drawing.Point(3, 2);
-            this.LinkToMain.MaximumSize = new System.Drawing.Size(100, 100);
-            this.LinkToMain.Name = "LinkToMain";
-            this.LinkToMain.Size = new System.Drawing.Size(80, 50);
-            this.LinkToMain.TabIndex = 14;
-            this.LinkToMain.UseVisualStyleBackColor = false;
-            this.LinkToMain.Click += new System.EventHandler(this.button1_Click_2);
-            // 
-            // MainButtonPanel
-            // 
-            this.MainButtonPanel.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.MainButtonPanel.Controls.Add(this.LinkToMain);
-            this.MainButtonPanel.Location = new System.Drawing.Point(12, 364);
-            this.MainButtonPanel.Name = "MainButtonPanel";
-            this.MainButtonPanel.Size = new System.Drawing.Size(85, 55);
-            this.MainButtonPanel.TabIndex = 16;
+            this.LInkToGreek.BackColor = System.Drawing.Color.Maroon;
+            this.LInkToGreek.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LInkToGreek.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LInkToGreek.Image = ((System.Drawing.Image)(resources.GetObject("LInkToGreek.Image")));
+            this.LInkToGreek.Location = new System.Drawing.Point(3, 2);
+            this.LInkToGreek.MaximumSize = new System.Drawing.Size(100, 100);
+            this.LInkToGreek.Name = "LInkToGreek";
+            this.LInkToGreek.Size = new System.Drawing.Size(80, 50);
+            this.LInkToGreek.TabIndex = 14;
+            this.LInkToGreek.UseVisualStyleBackColor = false;
+            this.LInkToGreek.Click += new System.EventHandler(this.LInkToGreek_Click);
             // 
             // SetTheory_Logic
             // 
@@ -518,7 +529,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(347, 437);
-            this.Controls.Add(this.MainButtonPanel);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SetTheory_Logic";
@@ -530,15 +541,15 @@
             this.Leave += new System.EventHandler(this.SetTheory_Logic_Leave);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.MainButtonPanel.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button LinkToMain;
-        private SetTheory SetTheory1 = new SetTheory();
+
+
         private System.Windows.Forms.Button Biconditional;
         private System.Windows.Forms.Button Universal;
         private System.Windows.Forms.Button Conditional;
@@ -568,7 +579,11 @@
         private System.Windows.Forms.Button Intersection;
         private System.Windows.Forms.Button CurlyBrackets;
         private System.Windows.Forms.Button EmptySet;
-        private System.Windows.Forms.Panel MainButtonPanel;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button LInkToGreek;
+        private Helpers Help1 = new Helpers();
+        //public Greek Greek1;
+       
        
 
 

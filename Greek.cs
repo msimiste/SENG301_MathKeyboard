@@ -11,8 +11,10 @@ namespace MathKeyBoard
 {
     public partial class Greek : Form
     {
+        //public SetTheory_Logic stk;
         public Greek()
         {
+            
             InitializeComponent();
         }
 
@@ -34,6 +36,21 @@ namespace MathKeyBoard
         private void button1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void LinkToSetTheory_Click(object sender, EventArgs e)
+        {
+            if (Help1.FormOpen("SetTheory_Logic"))
+            {
+                SetTheory_Logic SetTheory1 = new SetTheory_Logic();
+                SetTheory1.Show();
+                SetTheory1.TopMost = true;                
+            }
+
+            else
+                Help1.getOpenForm(this.ParentForm, "SetTheory_Logic").Focus();
+            
+           
         }
     }
 }
