@@ -1,4 +1,4 @@
-﻿namespace MathKeyBoard
+namespace MathKeyBoard
 {
      partial class SetTheory_Logic
     {
@@ -62,7 +62,6 @@
             this.EmptySet = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.LInkToGreek = new System.Windows.Forms.Button();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -583,7 +582,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button LInkToGreek;
         private Helpers Help1 = new Helpers();
-        private System.Windows.Forms.HelpProvider helpProvider1;
         //public Greek Greek1;
        
        

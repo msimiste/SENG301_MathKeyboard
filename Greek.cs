@@ -11,7 +11,18 @@ namespace MathKeyBoard
 {
     public partial class Greek : Form
     {
-        //public SetTheory_Logic stk;
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams param = base.CreateParams;
+                param.ExStyle |= 0x08000000;
+                return param;
+
+            }
+        }
+       
         public Greek()
         {
             
@@ -25,7 +36,7 @@ namespace MathKeyBoard
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            SendKeys.Send(((Button)sender).Text);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -48,9 +59,15 @@ namespace MathKeyBoard
             }
 
             else
-                Help1.getOpenForm(this.ParentForm, "SetTheory_Logic").Focus();
-            
-           
+                Help1.getOpenForm(this.ParentForm, "SetTheory_Logic").Show();
+
+
+        }
+
+        private void Phi_Lower_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("φ");
+           // SendKeys.Send(((Button)sender).Text);
         }
     }
 }

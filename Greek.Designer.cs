@@ -84,7 +84,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.MainButtonPanel);
             this.panel1.Controls.Add(this.Psi_Lower);
             this.panel1.Controls.Add(this.Chi_Lower);
             this.panel1.Controls.Add(this.Omega_Lower);
@@ -119,7 +118,7 @@
             this.panel1.Controls.Add(this.Gamma_upper);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(320, 463);
+            this.panel1.Size = new System.Drawing.Size(322, 400);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -134,6 +133,7 @@
             this.Psi_Lower.TabIndex = 35;
             this.Psi_Lower.Text = "ψ";
             this.Psi_Lower.UseVisualStyleBackColor = false;
+            this.Psi_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Chi_Lower
             // 
@@ -146,6 +146,7 @@
             this.Chi_Lower.TabIndex = 34;
             this.Chi_Lower.Text = "χ";
             this.Chi_Lower.UseVisualStyleBackColor = false;
+            this.Chi_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Omega_Lower
             // 
@@ -158,6 +159,7 @@
             this.Omega_Lower.TabIndex = 32;
             this.Omega_Lower.Text = "ω";
             this.Omega_Lower.UseVisualStyleBackColor = false;
+            this.Omega_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Phi_Lower
             // 
@@ -170,6 +172,7 @@
             this.Phi_Lower.TabIndex = 29;
             this.Phi_Lower.Text = "φ";
             this.Phi_Lower.UseVisualStyleBackColor = false;
+            this.Phi_Lower.Click += new System.EventHandler(this.Phi_Lower_Click);
             // 
             // Tau_Lower
             // 
@@ -182,6 +185,7 @@
             this.Tau_Lower.TabIndex = 27;
             this.Tau_Lower.Text = "τ";
             this.Tau_Lower.UseVisualStyleBackColor = false;
+            this.Tau_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Sigma_Lower
             // 
@@ -194,6 +198,7 @@
             this.Sigma_Lower.TabIndex = 26;
             this.Sigma_Lower.Text = "σ";
             this.Sigma_Lower.UseVisualStyleBackColor = false;
+            this.Sigma_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Rho_Lower
             // 
@@ -206,6 +211,7 @@
             this.Rho_Lower.TabIndex = 25;
             this.Rho_Lower.Text = "ρ";
             this.Rho_Lower.UseVisualStyleBackColor = false;
+            this.Rho_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Pi_Lower
             // 
@@ -218,6 +224,7 @@
             this.Pi_Lower.TabIndex = 24;
             this.Pi_Lower.Text = "π";
             this.Pi_Lower.UseVisualStyleBackColor = false;
+            this.Pi_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Xi_Lower
             // 
@@ -230,6 +237,7 @@
             this.Xi_Lower.TabIndex = 23;
             this.Xi_Lower.Text = "ξ";
             this.Xi_Lower.UseVisualStyleBackColor = false;
+            this.Xi_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Nu_Lower
             // 
@@ -242,6 +250,7 @@
             this.Nu_Lower.TabIndex = 22;
             this.Nu_Lower.Text = "ν";
             this.Nu_Lower.UseVisualStyleBackColor = false;
+            this.Nu_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Kappa_Lower
             // 
@@ -254,6 +263,7 @@
             this.Kappa_Lower.TabIndex = 21;
             this.Kappa_Lower.Text = "κ";
             this.Kappa_Lower.UseVisualStyleBackColor = false;
+            this.Kappa_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Iota_Lower
             // 
@@ -266,6 +276,7 @@
             this.Iota_Lower.TabIndex = 20;
             this.Iota_Lower.Text = "ι";
             this.Iota_Lower.UseVisualStyleBackColor = false;
+            this.Iota_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Zeta_Lower
             // 
@@ -278,6 +289,7 @@
             this.Zeta_Lower.TabIndex = 19;
             this.Zeta_Lower.Text = "ζ";
             this.Zeta_Lower.UseVisualStyleBackColor = false;
+            this.Zeta_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Epsilon_Lower
             // 
@@ -290,6 +302,7 @@
             this.Epsilon_Lower.TabIndex = 18;
             this.Epsilon_Lower.Text = "ε";
             this.Epsilon_Lower.UseVisualStyleBackColor = false;
+            this.Epsilon_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Mu_Lower
             // 
@@ -302,6 +315,7 @@
             this.Mu_Lower.TabIndex = 17;
             this.Mu_Lower.Text = "μ";
             this.Mu_Lower.UseVisualStyleBackColor = false;
+            this.Mu_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Lambda_Lower
             // 
@@ -314,6 +328,7 @@
             this.Lambda_Lower.TabIndex = 16;
             this.Lambda_Lower.Text = "λ";
             this.Lambda_Lower.UseVisualStyleBackColor = false;
+            this.Lambda_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Theta_Lower
             // 
@@ -326,6 +341,7 @@
             this.Theta_Lower.TabIndex = 15;
             this.Theta_Lower.Text = "θ";
             this.Theta_Lower.UseVisualStyleBackColor = false;
+            this.Theta_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Eta_Lower
             // 
@@ -338,6 +354,7 @@
             this.Eta_Lower.TabIndex = 14;
             this.Eta_Lower.Text = "η";
             this.Eta_Lower.UseVisualStyleBackColor = false;
+            this.Eta_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Delta_Lower
             // 
@@ -350,6 +367,7 @@
             this.Delta_Lower.TabIndex = 13;
             this.Delta_Lower.Text = "δ";
             this.Delta_Lower.UseVisualStyleBackColor = false;
+            this.Delta_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Gamma_Lower
             // 
@@ -362,6 +380,7 @@
             this.Gamma_Lower.TabIndex = 12;
             this.Gamma_Lower.Text = "γ";
             this.Gamma_Lower.UseVisualStyleBackColor = false;
+            this.Gamma_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Beta_Lower
             // 
@@ -374,6 +393,7 @@
             this.Beta_Lower.TabIndex = 11;
             this.Beta_Lower.Text = "β";
             this.Beta_Lower.UseVisualStyleBackColor = false;
+            this.Beta_Lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Alpha_lower
             // 
@@ -386,6 +406,7 @@
             this.Alpha_lower.TabIndex = 10;
             this.Alpha_lower.Text = "α";
             this.Alpha_lower.UseVisualStyleBackColor = false;
+            this.Alpha_lower.Click += new System.EventHandler(this.button1_Click);
             // 
             // Omega_Upper
             // 
@@ -398,6 +419,7 @@
             this.Omega_Upper.TabIndex = 9;
             this.Omega_Upper.Text = "Ω";
             this.Omega_Upper.UseVisualStyleBackColor = false;
+            this.Omega_Upper.Click += new System.EventHandler(this.button1_Click);
             // 
             // Psi_Upper
             // 
@@ -410,6 +432,7 @@
             this.Psi_Upper.TabIndex = 8;
             this.Psi_Upper.Text = "Ψ";
             this.Psi_Upper.UseVisualStyleBackColor = false;
+            this.Psi_Upper.Click += new System.EventHandler(this.button1_Click);
             // 
             // Xi_Upper
             // 
@@ -422,6 +445,7 @@
             this.Xi_Upper.TabIndex = 7;
             this.Xi_Upper.Text = "Ξ";
             this.Xi_Upper.UseVisualStyleBackColor = false;
+            this.Xi_Upper.Click += new System.EventHandler(this.button1_Click);
             // 
             // Phi_Upper
             // 
@@ -434,6 +458,7 @@
             this.Phi_Upper.TabIndex = 6;
             this.Phi_Upper.Text = "Φ";
             this.Phi_Upper.UseVisualStyleBackColor = false;
+            this.Phi_Upper.Click += new System.EventHandler(this.button1_Click);
             // 
             // Sigma_upper
             // 
@@ -446,6 +471,7 @@
             this.Sigma_upper.TabIndex = 5;
             this.Sigma_upper.Text = "Σ";
             this.Sigma_upper.UseVisualStyleBackColor = false;
+            this.Sigma_upper.Click += new System.EventHandler(this.button1_Click);
             // 
             // Pi_Upper
             // 
@@ -458,6 +484,7 @@
             this.Pi_Upper.TabIndex = 4;
             this.Pi_Upper.Text = "Π";
             this.Pi_Upper.UseVisualStyleBackColor = false;
+            this.Pi_Upper.Click += new System.EventHandler(this.button1_Click);
             // 
             // Lambda_upper
             // 
@@ -470,7 +497,7 @@
             this.Lambda_upper.TabIndex = 3;
             this.Lambda_upper.Text = "Λ";
             this.Lambda_upper.UseVisualStyleBackColor = false;
-            this.Lambda_upper.Click += new System.EventHandler(this.button1_Click_1);
+            this.Lambda_upper.Click += new System.EventHandler(this.button1_Click);
             // 
             // Theta_upper
             // 
@@ -483,6 +510,7 @@
             this.Theta_upper.TabIndex = 2;
             this.Theta_upper.Text = "Θ";
             this.Theta_upper.UseVisualStyleBackColor = false;
+            this.Theta_upper.Click += new System.EventHandler(this.button1_Click);
             // 
             // Delta_upper
             // 
@@ -495,12 +523,13 @@
             this.Delta_upper.TabIndex = 1;
             this.Delta_upper.Text = "Δ";
             this.Delta_upper.UseVisualStyleBackColor = false;
+            this.Delta_upper.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainButtonPanel
             // 
             this.MainButtonPanel.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.MainButtonPanel.Controls.Add(this.LinkToSetTheory);
-            this.MainButtonPanel.Location = new System.Drawing.Point(3, 406);
+            this.MainButtonPanel.Location = new System.Drawing.Point(12, 418);
             this.MainButtonPanel.Name = "MainButtonPanel";
             this.MainButtonPanel.Size = new System.Drawing.Size(85, 55);
             this.MainButtonPanel.TabIndex = 36;
@@ -527,10 +556,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(344, 481);
+            this.ClientSize = new System.Drawing.Size(342, 477);
+            this.Controls.Add(this.MainButtonPanel);
             this.Controls.Add(this.panel1);
             this.Name = "Greek";
-            this.Text = "Greek";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Greek_Load);
             this.panel1.ResumeLayout(false);
             this.MainButtonPanel.ResumeLayout(false);

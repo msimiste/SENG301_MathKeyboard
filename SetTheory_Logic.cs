@@ -40,15 +40,10 @@ namespace MathKeyBoard
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
-            SendKeys.Send("∀");
+            SendKeys.Send(((Button)sender).Text);
+            //SendKeys.Send("∀");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -203,7 +198,7 @@ namespace MathKeyBoard
 
         private void button1_Click_3(object sender, EventArgs e)
         {
-
+            SendKeys.Send(((Button)sender).Text);
         }
 
         private void LInkToGreek_Click(object sender, EventArgs e)
@@ -215,7 +210,7 @@ namespace MathKeyBoard
                 Greek1.TopMost = true;
             }
             else
-                Help1.getOpenForm(this.ParentForm, "Greek").Focus();
+                Help1.getOpenForm(this.ParentForm, "Greek").Show();
                
         }
 
