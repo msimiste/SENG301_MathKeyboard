@@ -51,12 +51,6 @@ namespace MathKeyBoard
         private void but_Click(object sender, EventArgs e)
         {
             SendKeys.Send(((Button)sender).Text);
-//<<<<<<< HEAD
-            
-//=======
-            
-
-//>>>>>>> 33f9c7871b0cda4cc0119d3fac13e79d13b4cf73
         }
 
 
