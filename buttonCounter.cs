@@ -10,7 +10,7 @@ namespace MathKeyBoard
         private String name;
         private int counter = 0;
 
-        public buttonCounter(String aName, Int16 aCounter)
+        public buttonCounter(String aName, int aCounter)
         {
             name = aName;
             counter = aCounter;

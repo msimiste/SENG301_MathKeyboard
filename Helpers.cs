@@ -40,7 +40,7 @@ namespace MathKeyBoard
             return ((Form)sender);
 
         }
-
+        //test
         //check is symbol.buttontext is in List<buttons>
         //if yes symbol.counter++
         //if no 
@@ -49,13 +49,9 @@ namespace MathKeyBoard
         //and symbol.counter++
         //updating text updates list names
         //some keys dont use sendkeys the same way
+        //sorts
         public void updateHotkeys(string btn)
         {
-            //foreach (Panel p in SetTheory_Logic)
-            //{
-
-            //}
-
             bool inList = false;
             for (int i = 0; i < buttons.Count; i++)
             {
@@ -64,8 +60,6 @@ namespace MathKeyBoard
                     inList = true;
                     buttons[i].incCounter(1);
                 }
-
-
             }
 
             if (!inList)
@@ -74,7 +68,13 @@ namespace MathKeyBoard
                 buttons.Add(symbol);
             }
 
+            buttons.Sort(new Comparison<buttonCounter>((x, y) => y.getCounter().CompareTo(x.getCounter())));
+        }
 
+        public void hotKeyMainKeyboardUpdateIteratorOfAwesomeNess(object sender)
+        {
+            Form mainForm = getOpenForm(sender, "MainKeyboard");
+        
 
         }
     }
