@@ -22,10 +22,10 @@ namespace MathKeyBoard
 
             }
         }
-       
+
         public Greek()
         {
-            
+
             InitializeComponent();
         }
 
@@ -37,16 +37,7 @@ namespace MathKeyBoard
         private void button1_Click(object sender, EventArgs e)
         {
             SendKeys.Send(((Button)sender).Text);
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
+            Help1.updateHotkeys(((Button)sender).Text); // this in mainkeyboard after a sendkeys
         }
 
         private void LinkToSetTheory_Click(object sender, EventArgs e)
@@ -55,7 +46,7 @@ namespace MathKeyBoard
             {
                 SetTheory_Logic SetTheory1 = new SetTheory_Logic();
                 SetTheory1.Show();
-                SetTheory1.TopMost = true;                
+                SetTheory1.TopMost = true;
             }
 
             else
@@ -64,10 +55,5 @@ namespace MathKeyBoard
 
         }
 
-        private void Phi_Lower_Click(object sender, EventArgs e)
-        {
-            SendKeys.Send("φ");
-           // SendKeys.Send(((Button)sender).Text);
-        }
     }
 }
