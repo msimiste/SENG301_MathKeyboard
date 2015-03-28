@@ -36,6 +36,8 @@ namespace MathKeyBoard
         private void but_Click(object sender, EventArgs e)
         {
             SendKeys.Send(((Button)sender).Text);
+
+           Help1.updateHotkeys(((Button)sender).Text); // this in mainkeyboard after a sendkeys
         }
 
       
