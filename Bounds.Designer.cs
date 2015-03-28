@@ -80,6 +80,7 @@
             this.BoundsPanel.Name = "BoundsPanel";
             this.BoundsPanel.Size = new System.Drawing.Size(226, 136);
             this.BoundsPanel.TabIndex = 3;
+            this.BoundsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.BoundsPanel_Paint);
             // 
             // LowerBound
             // 

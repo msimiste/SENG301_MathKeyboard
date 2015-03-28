@@ -11,8 +11,8 @@ namespace MathKeyBoard
 {
     public partial class MainKeyboard : Form
     {
-        public String up;
-        public String low;
+        private String up;
+        private String low;
         protected override CreateParams CreateParams
         {
             get
@@ -28,19 +28,34 @@ namespace MathKeyBoard
             InitializeComponent();
         }
 
-        private void Universal_Click(object sender, EventArgs e)
+        public String getUp()
         {
-            SendKeys.Send(((Button)sender).Text);
+            return this.up;
         }
+        public String getLow()
+        {
+            return this.low;
+        }
+        public void setUp(String newUpValue)
+        {
+            up = newUpValue;
+        }
+        public void setLow(String newLowValue)
+        {
+            low = newLowValue;
+        }
+
+
+
 
         private void but_Click(object sender, EventArgs e)
         {
             SendKeys.Send(((Button)sender).Text);
+            
 
-           Help1.updateHotkeys(((Button)sender).Text); // this in mainkeyboard after a sendkeys
         }
 
-      
+
 
         private void LinkToSetTheory_Click(object sender, EventArgs e)
         {
@@ -54,7 +69,6 @@ namespace MathKeyBoard
             else
                 Help1.getOpenForm(this.ParentForm, "SetTheory_Logic").Show();
         }
-
         private void MainKeyboard_Load(object sender, EventArgs e)
         {
 
@@ -78,20 +92,31 @@ namespace MathKeyBoard
             Bounds boundsDialog = new Bounds();
             boundsDialog.TopMost = true;
             boundsDialog.ShowDialog();
-            
-            //up = boundsDialog.UpperBound_txt.Text;
-            //low = boundsDialog.LowerBound_txt.Text;
+
             String tst = ("{F}^+{=}" + up);
-
-
             SendKeys.Send("^(=)" + low + "^(=)");
             SendKeys.Send("{∫}^+{=}" + up + "^+{=}");
-           // SendKeys.Send("+({left 2})^(c)");
-            
 
-               // + "^+{bksp}{bksp}{c}"+"^{v}"+"^{=}"+"^{=}" + low);
-            //String up = boundsDialog.UpperBound_txt.Text;
-            //String low = boundsDialog.LowerBound_txt.Text;
+        }
+
+        private void SuperScript_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Hat_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("0302%(x)");
+        }
+
+        private void BAR_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("0304%(x)");
+        }
+
+        private void DOT_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("0307%(x)");
         }
     }
 }

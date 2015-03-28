@@ -24,8 +24,8 @@ namespace MathKeyBoard
             if (this.UpperBound_txt.Text != "" && this.LowerBound_txt.Text != "")
             {
                 MainKeyboard a = (MainKeyboard)help1.getOpenForm(this, "MainKeyboard");
-                a.up = this.UpperBound_txt.Text;
-                a.low = this.LowerBound_txt.Text;
+                a.setUp(this.UpperBound_txt.Text);
+                a.setLow(this.LowerBound_txt.Text);
                 this.Dispose();
             }
 
@@ -52,6 +52,11 @@ namespace MathKeyBoard
         }
 
         private void Bounds_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BoundsPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

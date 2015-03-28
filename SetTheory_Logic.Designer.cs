@@ -80,7 +80,7 @@
             this.Biconditional.TabIndex = 6;
             this.Biconditional.Text = "↔";
             this.Biconditional.UseVisualStyleBackColor = false;
-            this.Biconditional.Click += new System.EventHandler(this.Biconditional_Click);
+            this.Biconditional.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Universal
             // 
@@ -95,7 +95,7 @@
             this.Universal.TabIndex = 0;
             this.Universal.Text = "∀";
             this.Universal.UseVisualStyleBackColor = false;
-            this.Universal.Click += new System.EventHandler(this.button1_Click_3);
+            this.Universal.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Conditional
             // 
@@ -110,7 +110,7 @@
             this.Conditional.TabIndex = 7;
             this.Conditional.Text = "→";
             this.Conditional.UseVisualStyleBackColor = false;
-            this.Conditional.Click += new System.EventHandler(this.Conditional_Click);
+            this.Conditional.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Existential
             // 
@@ -125,7 +125,7 @@
             this.Existential.TabIndex = 1;
             this.Existential.Text = "∃";
             this.Existential.UseVisualStyleBackColor = false;
-            this.Existential.Click += new System.EventHandler(this.button1_Click_3);
+            this.Existential.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // NotProvable
             // 
@@ -140,7 +140,7 @@
             this.NotProvable.TabIndex = 12;
             this.NotProvable.Text = "⊬";
             this.NotProvable.UseVisualStyleBackColor = false;
-            this.NotProvable.Click += new System.EventHandler(this.NotProvable_Click);
+            this.NotProvable.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // negation
             // 
@@ -155,7 +155,7 @@
             this.negation.TabIndex = 2;
             this.negation.Text = "¬";
             this.negation.UseVisualStyleBackColor = false;
-            this.negation.Click += new System.EventHandler(this.negation_Click);
+            this.negation.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Provable
             // 
@@ -170,7 +170,7 @@
             this.Provable.TabIndex = 8;
             this.Provable.Text = "⊢";
             this.Provable.UseVisualStyleBackColor = false;
-            this.Provable.Click += new System.EventHandler(this.Provable_Click);
+            this.Provable.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // brackets
             // 
@@ -200,7 +200,7 @@
             this.Verum.TabIndex = 10;
             this.Verum.Text = "⊤";
             this.Verum.UseVisualStyleBackColor = false;
-            this.Verum.Click += new System.EventHandler(this.Verum_Click);
+            this.Verum.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Conjunction
             // 
@@ -215,7 +215,7 @@
             this.Conjunction.TabIndex = 4;
             this.Conjunction.Text = "∧";
             this.Conjunction.UseVisualStyleBackColor = false;
-            this.Conjunction.Click += new System.EventHandler(this.Conjunction_Click);
+            this.Conjunction.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Entails
             // 
@@ -230,7 +230,7 @@
             this.Entails.TabIndex = 9;
             this.Entails.Text = "⊨";
             this.Entails.UseVisualStyleBackColor = false;
-            this.Entails.Click += new System.EventHandler(this.button3_Click);
+            this.Entails.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Disjunction
             // 
@@ -245,7 +245,7 @@
             this.Disjunction.TabIndex = 5;
             this.Disjunction.Text = "∨";
             this.Disjunction.UseVisualStyleBackColor = false;
-            this.Disjunction.Click += new System.EventHandler(this.Disjunction_Click);
+            this.Disjunction.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Falsum
             // 
@@ -260,7 +260,7 @@
             this.Falsum.TabIndex = 11;
             this.Falsum.Text = "⊥";
             this.Falsum.UseVisualStyleBackColor = false;
-            this.Falsum.Click += new System.EventHandler(this.Falsum_Click);
+            this.Falsum.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // DoesNotEntail
             // 
@@ -275,7 +275,7 @@
             this.DoesNotEntail.TabIndex = 13;
             this.DoesNotEntail.Text = "⊭";
             this.DoesNotEntail.UseVisualStyleBackColor = false;
-            this.DoesNotEntail.Click += new System.EventHandler(this.DoesNotEntail_Click);
+            this.DoesNotEntail.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel1
             // 
@@ -325,7 +325,7 @@
             this.NaturalNumbers.TabIndex = 27;
             this.NaturalNumbers.Text = "ℕ";
             this.NaturalNumbers.UseVisualStyleBackColor = false;
-            this.NaturalNumbers.Click += new System.EventHandler(this.NaturalNumbers_Click);
+            this.NaturalNumbers.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Integers
             // 
@@ -338,7 +338,7 @@
             this.Integers.TabIndex = 26;
             this.Integers.Text = "ℤ";
             this.Integers.UseVisualStyleBackColor = false;
-            this.Integers.Click += new System.EventHandler(this.Integers_Click);
+            this.Integers.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // RealNumbers
             // 
@@ -351,7 +351,7 @@
             this.RealNumbers.TabIndex = 25;
             this.RealNumbers.Text = "ℝ";
             this.RealNumbers.UseVisualStyleBackColor = false;
-            this.RealNumbers.Click += new System.EventHandler(this.RealNumbers_Click);
+            this.RealNumbers.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // RationalNumbers
             // 
@@ -364,7 +364,7 @@
             this.RationalNumbers.TabIndex = 24;
             this.RationalNumbers.Text = "ℚ";
             this.RationalNumbers.UseVisualStyleBackColor = false;
-            this.RationalNumbers.Click += new System.EventHandler(this.RationalNumbers_Click);
+            this.RationalNumbers.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // NotSubset
             // 
@@ -377,7 +377,7 @@
             this.NotSubset.TabIndex = 23;
             this.NotSubset.Text = "⊄";
             this.NotSubset.UseVisualStyleBackColor = false;
-            this.NotSubset.Click += new System.EventHandler(this.NotSubset_Click);
+            this.NotSubset.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // NotSuperset
             // 
@@ -390,7 +390,7 @@
             this.NotSuperset.TabIndex = 22;
             this.NotSuperset.Text = "⊅";
             this.NotSuperset.UseVisualStyleBackColor = false;
-            this.NotSuperset.Click += new System.EventHandler(this.NotSuperset_Click);
+            this.NotSuperset.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Subset
             // 
@@ -403,7 +403,7 @@
             this.Subset.TabIndex = 21;
             this.Subset.Text = "⊂";
             this.Subset.UseVisualStyleBackColor = false;
-            this.Subset.Click += new System.EventHandler(this.Subset_Click);
+            this.Subset.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // SuperSet
             // 
@@ -416,7 +416,7 @@
             this.SuperSet.TabIndex = 20;
             this.SuperSet.Text = "⊃";
             this.SuperSet.UseVisualStyleBackColor = false;
-            this.SuperSet.Click += new System.EventHandler(this.SuperSet_Click);
+            this.SuperSet.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // NotElement
             // 
@@ -429,7 +429,7 @@
             this.NotElement.TabIndex = 19;
             this.NotElement.Text = "∉";
             this.NotElement.UseVisualStyleBackColor = false;
-            this.NotElement.Click += new System.EventHandler(this.NotElement_Click);
+            this.NotElement.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Element
             // 
@@ -443,7 +443,7 @@
             this.Element.TabIndex = 18;
             this.Element.Text = "∈";
             this.Element.UseVisualStyleBackColor = false;
-            this.Element.Click += new System.EventHandler(this.Element_Click);
+            this.Element.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Union
             // 
@@ -456,7 +456,7 @@
             this.Union.TabIndex = 17;
             this.Union.Text = "⋃";
             this.Union.UseVisualStyleBackColor = false;
-            this.Union.Click += new System.EventHandler(this.Union_Click);
+            this.Union.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Intersection
             // 
@@ -469,7 +469,7 @@
             this.Intersection.TabIndex = 16;
             this.Intersection.Text = "⋂";
             this.Intersection.UseVisualStyleBackColor = false;
-            this.Intersection.Click += new System.EventHandler(this.Intersection_Click);
+            this.Intersection.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // CurlyBrackets
             // 
@@ -495,7 +495,7 @@
             this.EmptySet.TabIndex = 14;
             this.EmptySet.Text = "∅";
             this.EmptySet.UseVisualStyleBackColor = false;
-            this.EmptySet.Click += new System.EventHandler(this.button1_Click_3);
+            this.EmptySet.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel2
             // 
@@ -505,7 +505,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(85, 55);
             this.panel2.TabIndex = 17;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+           // this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // LInkToGreek
             // 
@@ -539,7 +539,6 @@
             this.Text = "SetTheory_Logic";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Logic_Load);
-            this.Leave += new System.EventHandler(this.SetTheory_Logic_Leave);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
