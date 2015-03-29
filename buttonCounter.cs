@@ -7,7 +7,7 @@ namespace MathKeyBoard
 {
     public class buttonCounter
     {
-        private String name;
+        private String name = "";
         private int counter = 0;
 
         public buttonCounter(String aName, int aCounter)

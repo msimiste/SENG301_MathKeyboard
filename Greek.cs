@@ -38,6 +38,7 @@ namespace MathKeyBoard
         {
             SendKeys.Send(((Button)sender).Text);
             Help1.updateHotkeys(((Button)sender).Text); // this in mainkeyboard after a sendkeys
+            Help1.updateHotkeyDisplay(this.ParentForm);
         }
 
         private void LinkToSetTheory_Click(object sender, EventArgs e)

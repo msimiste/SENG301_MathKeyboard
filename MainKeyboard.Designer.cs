@@ -31,39 +31,39 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainKeyboard));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.HotkeyPanel = new System.Windows.Forms.Panel();
-            this.NotProvable = new System.Windows.Forms.Button();
-            this.DoesNotEntail = new System.Windows.Forms.Button();
-            this.RationalNumbers = new System.Windows.Forms.Button();
-            this.RealNumbers = new System.Windows.Forms.Button();
+            this.Nabla = new System.Windows.Forms.Button();
             this.BAR = new System.Windows.Forms.Button();
+            this.Plus_Minus = new System.Windows.Forms.Button();
+            this.ChemArrows = new System.Windows.Forms.Button();
+            this.DotProduct = new System.Windows.Forms.Button();
+            this.PartialDerivative = new System.Windows.Forms.Button();
             this.DOT = new System.Windows.Forms.Button();
-            this.SingleIntegral = new System.Windows.Forms.Button();
-            this.CubeRoot = new System.Windows.Forms.Button();
             this.EnergyTimeDerivative = new System.Windows.Forms.Button();
+            this.SingleIntegral = new System.Windows.Forms.Button();
+            this.Falsum = new System.Windows.Forms.Button();
+            this.CubeRoot = new System.Windows.Forms.Button();
             this.Composition = new System.Windows.Forms.Button();
             this.Inverse = new System.Windows.Forms.Button();
             this.Hat = new System.Windows.Forms.Button();
-            this.PartialDerivative = new System.Windows.Forms.Button();
             this.Summation = new System.Windows.Forms.Button();
             this.Proportional = new System.Windows.Forms.Button();
             this.Double_SurfaceIntegral = new System.Windows.Forms.Button();
             this.SurfaceIntegral = new System.Windows.Forms.Button();
-            this.Falsum = new System.Windows.Forms.Button();
             this.MinusPlus = new System.Windows.Forms.Button();
             this.Square = new System.Windows.Forms.Button();
-            this.Plus_Minus = new System.Windows.Forms.Button();
-            this.DotProduct = new System.Windows.Forms.Button();
             this.Triple_SurfaceIntegral = new System.Windows.Forms.Button();
-            this.ChemArrows = new System.Windows.Forms.Button();
             this.Infinity = new System.Windows.Forms.Button();
             this.SubScript = new System.Windows.Forms.Button();
             this.SuperScript = new System.Windows.Forms.Button();
+            this.HotkeyPanel = new System.Windows.Forms.Panel();
+            this.Hotkey1 = new System.Windows.Forms.Button();
+            this.Hotkey2 = new System.Windows.Forms.Button();
+            this.Hotkey4 = new System.Windows.Forms.Button();
+            this.Hotkey3 = new System.Windows.Forms.Button();
             this.LinkToSetTheory = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.LInkToGreek = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Nabla = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.HotkeyPanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -103,68 +103,19 @@
             this.panel1.Size = new System.Drawing.Size(320, 351);
             this.panel1.TabIndex = 16;
             // 
-            // HotkeyPanel
+            // Nabla
             // 
-            this.HotkeyPanel.Controls.Add(this.NotProvable);
-            this.HotkeyPanel.Controls.Add(this.DoesNotEntail);
-            this.HotkeyPanel.Controls.Add(this.RationalNumbers);
-            this.HotkeyPanel.Controls.Add(this.RealNumbers);
-            this.HotkeyPanel.Location = new System.Drawing.Point(12, 312);
-            this.HotkeyPanel.Name = "HotkeyPanel";
-            this.HotkeyPanel.Size = new System.Drawing.Size(320, 51);
-            this.HotkeyPanel.TabIndex = 26;
-            // 
-            // NotProvable
-            // 
-            this.NotProvable.AutoSize = true;
-            this.NotProvable.BackColor = System.Drawing.Color.Black;
-            this.NotProvable.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NotProvable.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NotProvable.Location = new System.Drawing.Point(0, 0);
-            this.NotProvable.MaximumSize = new System.Drawing.Size(100, 75);
-            this.NotProvable.Name = "NotProvable";
-            this.NotProvable.Size = new System.Drawing.Size(80, 50);
-            this.NotProvable.TabIndex = 12;
-            this.NotProvable.UseVisualStyleBackColor = false;
-            this.NotProvable.Click += new System.EventHandler(this.but_Click);
-            // 
-            // DoesNotEntail
-            // 
-            this.DoesNotEntail.AutoSize = true;
-            this.DoesNotEntail.BackColor = System.Drawing.Color.Black;
-            this.DoesNotEntail.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DoesNotEntail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.DoesNotEntail.Location = new System.Drawing.Point(80, 0);
-            this.DoesNotEntail.MaximumSize = new System.Drawing.Size(100, 75);
-            this.DoesNotEntail.Name = "DoesNotEntail";
-            this.DoesNotEntail.Size = new System.Drawing.Size(80, 50);
-            this.DoesNotEntail.TabIndex = 13;
-            this.DoesNotEntail.UseVisualStyleBackColor = false;
-            this.DoesNotEntail.Click += new System.EventHandler(this.but_Click);
-            // 
-            // RationalNumbers
-            // 
-            this.RationalNumbers.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RationalNumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RationalNumbers.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.RationalNumbers.Location = new System.Drawing.Point(240, 0);
-            this.RationalNumbers.Name = "RationalNumbers";
-            this.RationalNumbers.Size = new System.Drawing.Size(80, 50);
-            this.RationalNumbers.TabIndex = 24;
-            this.RationalNumbers.UseVisualStyleBackColor = false;
-            this.RationalNumbers.Click += new System.EventHandler(this.but_Click);
-            // 
-            // RealNumbers
-            // 
-            this.RealNumbers.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RealNumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RealNumbers.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.RealNumbers.Location = new System.Drawing.Point(160, 0);
-            this.RealNumbers.Name = "RealNumbers";
-            this.RealNumbers.Size = new System.Drawing.Size(80, 50);
-            this.RealNumbers.TabIndex = 25;
-            this.RealNumbers.UseVisualStyleBackColor = false;
-            this.RealNumbers.Click += new System.EventHandler(this.but_Click);
+            this.Nabla.AutoSize = true;
+            this.Nabla.BackColor = System.Drawing.Color.Black;
+            this.Nabla.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nabla.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Nabla.Location = new System.Drawing.Point(1, 50);
+            this.Nabla.MaximumSize = new System.Drawing.Size(100, 75);
+            this.Nabla.Name = "Nabla";
+            this.Nabla.Size = new System.Drawing.Size(80, 50);
+            this.Nabla.TabIndex = 21;
+            this.Nabla.Text = "∇";
+            this.Nabla.UseVisualStyleBackColor = false;
             // 
             // BAR
             // 
@@ -179,6 +130,65 @@
             this.BAR.UseVisualStyleBackColor = false;
             this.BAR.Click += new System.EventHandler(this.BAR_Click);
             // 
+            // Plus_Minus
+            // 
+            this.Plus_Minus.AutoSize = true;
+            this.Plus_Minus.BackColor = System.Drawing.Color.Black;
+            this.Plus_Minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Plus_Minus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Plus_Minus.Location = new System.Drawing.Point(160, 200);
+            this.Plus_Minus.MaximumSize = new System.Drawing.Size(100, 75);
+            this.Plus_Minus.Name = "Plus_Minus";
+            this.Plus_Minus.Size = new System.Drawing.Size(80, 50);
+            this.Plus_Minus.TabIndex = 4;
+            this.Plus_Minus.Text = "±";
+            this.Plus_Minus.UseVisualStyleBackColor = false;
+            this.Plus_Minus.Click += new System.EventHandler(this.but_Click);
+            // 
+            // ChemArrows
+            // 
+            this.ChemArrows.AutoSize = true;
+            this.ChemArrows.BackColor = System.Drawing.Color.Black;
+            this.ChemArrows.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChemArrows.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ChemArrows.Location = new System.Drawing.Point(80, 150);
+            this.ChemArrows.MaximumSize = new System.Drawing.Size(100, 75);
+            this.ChemArrows.Name = "ChemArrows";
+            this.ChemArrows.Size = new System.Drawing.Size(80, 50);
+            this.ChemArrows.TabIndex = 8;
+            this.ChemArrows.Text = "⇋";
+            this.ChemArrows.UseVisualStyleBackColor = false;
+            this.ChemArrows.Click += new System.EventHandler(this.but_Click);
+            // 
+            // DotProduct
+            // 
+            this.DotProduct.AutoSize = true;
+            this.DotProduct.BackColor = System.Drawing.Color.Black;
+            this.DotProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DotProduct.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DotProduct.Location = new System.Drawing.Point(160, 250);
+            this.DotProduct.MaximumSize = new System.Drawing.Size(100, 75);
+            this.DotProduct.Name = "DotProduct";
+            this.DotProduct.Size = new System.Drawing.Size(80, 50);
+            this.DotProduct.TabIndex = 10;
+            this.DotProduct.Text = "•";
+            this.DotProduct.UseVisualStyleBackColor = false;
+            this.DotProduct.Click += new System.EventHandler(this.but_Click);
+            // 
+            // PartialDerivative
+            // 
+            this.PartialDerivative.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.PartialDerivative.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PartialDerivative.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.PartialDerivative.Location = new System.Drawing.Point(0, 250);
+            this.PartialDerivative.Margin = new System.Windows.Forms.Padding(0);
+            this.PartialDerivative.Name = "PartialDerivative";
+            this.PartialDerivative.Size = new System.Drawing.Size(80, 50);
+            this.PartialDerivative.TabIndex = 18;
+            this.PartialDerivative.Text = "∂";
+            this.PartialDerivative.UseVisualStyleBackColor = false;
+            this.PartialDerivative.Click += new System.EventHandler(this.but_Click);
+            // 
             // DOT
             // 
             this.DOT.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -191,6 +201,19 @@
             this.DOT.Text = " ̇";
             this.DOT.UseVisualStyleBackColor = false;
             this.DOT.Click += new System.EventHandler(this.DOT_Click);
+            // 
+            // EnergyTimeDerivative
+            // 
+            this.EnergyTimeDerivative.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.EnergyTimeDerivative.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EnergyTimeDerivative.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.EnergyTimeDerivative.Location = new System.Drawing.Point(240, 250);
+            this.EnergyTimeDerivative.Name = "EnergyTimeDerivative";
+            this.EnergyTimeDerivative.Size = new System.Drawing.Size(80, 50);
+            this.EnergyTimeDerivative.TabIndex = 22;
+            this.EnergyTimeDerivative.Text = "÷";
+            this.EnergyTimeDerivative.UseVisualStyleBackColor = false;
+            this.EnergyTimeDerivative.Click += new System.EventHandler(this.but_Click);
             // 
             // SingleIntegral
             // 
@@ -207,6 +230,21 @@
             this.SingleIntegral.UseVisualStyleBackColor = false;
             this.SingleIntegral.Click += new System.EventHandler(this.SingleIntegral_Click);
             // 
+            // Falsum
+            // 
+            this.Falsum.AutoSize = true;
+            this.Falsum.BackColor = System.Drawing.Color.Black;
+            this.Falsum.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Falsum.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Falsum.Location = new System.Drawing.Point(80, 250);
+            this.Falsum.MaximumSize = new System.Drawing.Size(100, 75);
+            this.Falsum.Name = "Falsum";
+            this.Falsum.Size = new System.Drawing.Size(80, 50);
+            this.Falsum.TabIndex = 11;
+            this.Falsum.Text = "π";
+            this.Falsum.UseVisualStyleBackColor = false;
+            this.Falsum.Click += new System.EventHandler(this.but_Click);
+            // 
             // CubeRoot
             // 
             this.CubeRoot.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -219,19 +257,6 @@
             this.CubeRoot.Text = "∛";
             this.CubeRoot.UseVisualStyleBackColor = false;
             this.CubeRoot.Click += new System.EventHandler(this.but_Click);
-            // 
-            // EnergyTimeDerivative
-            // 
-            this.EnergyTimeDerivative.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.EnergyTimeDerivative.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EnergyTimeDerivative.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.EnergyTimeDerivative.Location = new System.Drawing.Point(240, 250);
-            this.EnergyTimeDerivative.Name = "EnergyTimeDerivative";
-            this.EnergyTimeDerivative.Size = new System.Drawing.Size(80, 50);
-            this.EnergyTimeDerivative.TabIndex = 22;
-            this.EnergyTimeDerivative.Text = "÷";
-            this.EnergyTimeDerivative.UseVisualStyleBackColor = false;
-            this.EnergyTimeDerivative.Click += new System.EventHandler(this.but_Click);
             // 
             // Composition
             // 
@@ -271,20 +296,6 @@
             this.Hat.Text = " ̂";
             this.Hat.UseVisualStyleBackColor = false;
             this.Hat.Click += new System.EventHandler(this.Hat_Click);
-            // 
-            // PartialDerivative
-            // 
-            this.PartialDerivative.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PartialDerivative.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PartialDerivative.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.PartialDerivative.Location = new System.Drawing.Point(0, 250);
-            this.PartialDerivative.Margin = new System.Windows.Forms.Padding(0);
-            this.PartialDerivative.Name = "PartialDerivative";
-            this.PartialDerivative.Size = new System.Drawing.Size(80, 50);
-            this.PartialDerivative.TabIndex = 18;
-            this.PartialDerivative.Text = "∂";
-            this.PartialDerivative.UseVisualStyleBackColor = false;
-            this.PartialDerivative.Click += new System.EventHandler(this.but_Click);
             // 
             // Summation
             // 
@@ -338,21 +349,6 @@
             this.SurfaceIntegral.UseVisualStyleBackColor = false;
             this.SurfaceIntegral.Click += new System.EventHandler(this.but_Click);
             // 
-            // Falsum
-            // 
-            this.Falsum.AutoSize = true;
-            this.Falsum.BackColor = System.Drawing.Color.Black;
-            this.Falsum.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Falsum.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Falsum.Location = new System.Drawing.Point(80, 250);
-            this.Falsum.MaximumSize = new System.Drawing.Size(100, 75);
-            this.Falsum.Name = "Falsum";
-            this.Falsum.Size = new System.Drawing.Size(80, 50);
-            this.Falsum.TabIndex = 11;
-            this.Falsum.Text = "π";
-            this.Falsum.UseVisualStyleBackColor = false;
-            this.Falsum.Click += new System.EventHandler(this.but_Click);
-            // 
             // MinusPlus
             // 
             this.MinusPlus.AutoSize = true;
@@ -384,36 +380,6 @@
             this.Square.UseVisualStyleBackColor = false;
             this.Square.Click += new System.EventHandler(this.but_Click);
             // 
-            // Plus_Minus
-            // 
-            this.Plus_Minus.AutoSize = true;
-            this.Plus_Minus.BackColor = System.Drawing.Color.Black;
-            this.Plus_Minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Plus_Minus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Plus_Minus.Location = new System.Drawing.Point(160, 200);
-            this.Plus_Minus.MaximumSize = new System.Drawing.Size(100, 75);
-            this.Plus_Minus.Name = "Plus_Minus";
-            this.Plus_Minus.Size = new System.Drawing.Size(80, 50);
-            this.Plus_Minus.TabIndex = 4;
-            this.Plus_Minus.Text = "±";
-            this.Plus_Minus.UseVisualStyleBackColor = false;
-            this.Plus_Minus.Click += new System.EventHandler(this.but_Click);
-            // 
-            // DotProduct
-            // 
-            this.DotProduct.AutoSize = true;
-            this.DotProduct.BackColor = System.Drawing.Color.Black;
-            this.DotProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DotProduct.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.DotProduct.Location = new System.Drawing.Point(160, 250);
-            this.DotProduct.MaximumSize = new System.Drawing.Size(100, 75);
-            this.DotProduct.Name = "DotProduct";
-            this.DotProduct.Size = new System.Drawing.Size(80, 50);
-            this.DotProduct.TabIndex = 10;
-            this.DotProduct.Text = "•";
-            this.DotProduct.UseVisualStyleBackColor = false;
-            this.DotProduct.Click += new System.EventHandler(this.but_Click);
-            // 
             // Triple_SurfaceIntegral
             // 
             this.Triple_SurfaceIntegral.AutoSize = true;
@@ -428,21 +394,6 @@
             this.Triple_SurfaceIntegral.Text = "∰";
             this.Triple_SurfaceIntegral.UseVisualStyleBackColor = false;
             this.Triple_SurfaceIntegral.Click += new System.EventHandler(this.but_Click);
-            // 
-            // ChemArrows
-            // 
-            this.ChemArrows.AutoSize = true;
-            this.ChemArrows.BackColor = System.Drawing.Color.Black;
-            this.ChemArrows.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChemArrows.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ChemArrows.Location = new System.Drawing.Point(80, 150);
-            this.ChemArrows.MaximumSize = new System.Drawing.Size(100, 75);
-            this.ChemArrows.Name = "ChemArrows";
-            this.ChemArrows.Size = new System.Drawing.Size(80, 50);
-            this.ChemArrows.TabIndex = 8;
-            this.ChemArrows.Text = "⇋";
-            this.ChemArrows.UseVisualStyleBackColor = false;
-            this.ChemArrows.Click += new System.EventHandler(this.but_Click);
             // 
             // Infinity
             // 
@@ -490,6 +441,69 @@
             this.SuperScript.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.SuperScript.UseVisualStyleBackColor = false;
             this.SuperScript.Click += new System.EventHandler(this.SuperScript_Click);
+            // 
+            // HotkeyPanel
+            // 
+            this.HotkeyPanel.Controls.Add(this.Hotkey1);
+            this.HotkeyPanel.Controls.Add(this.Hotkey2);
+            this.HotkeyPanel.Controls.Add(this.Hotkey4);
+            this.HotkeyPanel.Controls.Add(this.Hotkey3);
+            this.HotkeyPanel.Location = new System.Drawing.Point(12, 312);
+            this.HotkeyPanel.Name = "HotkeyPanel";
+            this.HotkeyPanel.Size = new System.Drawing.Size(320, 51);
+            this.HotkeyPanel.TabIndex = 26;
+            // 
+            // Hotkey1
+            // 
+            this.Hotkey1.AutoSize = true;
+            this.Hotkey1.BackColor = System.Drawing.Color.Black;
+            this.Hotkey1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hotkey1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Hotkey1.Location = new System.Drawing.Point(0, 0);
+            this.Hotkey1.MaximumSize = new System.Drawing.Size(100, 75);
+            this.Hotkey1.Name = "Hotkey1";
+            this.Hotkey1.Size = new System.Drawing.Size(80, 50);
+            this.Hotkey1.TabIndex = 12;
+            this.Hotkey1.UseVisualStyleBackColor = false;
+            this.Hotkey1.Click += new System.EventHandler(this.but_Click);
+            // 
+            // Hotkey2
+            // 
+            this.Hotkey2.AutoSize = true;
+            this.Hotkey2.BackColor = System.Drawing.Color.Black;
+            this.Hotkey2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hotkey2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Hotkey2.Location = new System.Drawing.Point(80, 0);
+            this.Hotkey2.MaximumSize = new System.Drawing.Size(100, 75);
+            this.Hotkey2.Name = "Hotkey2";
+            this.Hotkey2.Size = new System.Drawing.Size(80, 50);
+            this.Hotkey2.TabIndex = 13;
+            this.Hotkey2.UseVisualStyleBackColor = false;
+            this.Hotkey2.Click += new System.EventHandler(this.but_Click);
+            // 
+            // Hotkey4
+            // 
+            this.Hotkey4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Hotkey4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hotkey4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Hotkey4.Location = new System.Drawing.Point(240, 0);
+            this.Hotkey4.Name = "Hotkey4";
+            this.Hotkey4.Size = new System.Drawing.Size(80, 50);
+            this.Hotkey4.TabIndex = 24;
+            this.Hotkey4.UseVisualStyleBackColor = false;
+            this.Hotkey4.Click += new System.EventHandler(this.but_Click);
+            // 
+            // Hotkey3
+            // 
+            this.Hotkey3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Hotkey3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hotkey3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Hotkey3.Location = new System.Drawing.Point(160, 0);
+            this.Hotkey3.Name = "Hotkey3";
+            this.Hotkey3.Size = new System.Drawing.Size(80, 50);
+            this.Hotkey3.TabIndex = 25;
+            this.Hotkey3.UseVisualStyleBackColor = false;
+            this.Hotkey3.Click += new System.EventHandler(this.but_Click);
             // 
             // LinkToSetTheory
             // 
@@ -543,20 +557,6 @@
             this.panel3.Size = new System.Drawing.Size(85, 55);
             this.panel3.TabIndex = 20;
             // 
-            // Nabla
-            // 
-            this.Nabla.AutoSize = true;
-            this.Nabla.BackColor = System.Drawing.Color.Black;
-            this.Nabla.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nabla.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nabla.Location = new System.Drawing.Point(1, 50);
-            this.Nabla.MaximumSize = new System.Drawing.Size(100, 75);
-            this.Nabla.Name = "Nabla";
-            this.Nabla.Size = new System.Drawing.Size(80, 50);
-            this.Nabla.TabIndex = 21;
-            this.Nabla.Text = "∇";
-            this.Nabla.UseVisualStyleBackColor = false;
-            // 
             // MainKeyboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -587,8 +587,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BAR;
         private System.Windows.Forms.Button DOT;
-        private System.Windows.Forms.Button RealNumbers;
-        private System.Windows.Forms.Button RationalNumbers;
+        private System.Windows.Forms.Button Hotkey3;
+        private System.Windows.Forms.Button Hotkey4;
         private System.Windows.Forms.Button CubeRoot;
         private System.Windows.Forms.Button EnergyTimeDerivative;
         private System.Windows.Forms.Button Composition;
@@ -599,7 +599,7 @@
         private System.Windows.Forms.Button Proportional;
         private System.Windows.Forms.Button Double_SurfaceIntegral;
         private System.Windows.Forms.Button SurfaceIntegral;
-        private System.Windows.Forms.Button DoesNotEntail;
+        private System.Windows.Forms.Button Hotkey2;
         private System.Windows.Forms.Button Falsum;
         private System.Windows.Forms.Button MinusPlus;
         private System.Windows.Forms.Button Square;
@@ -608,7 +608,7 @@
         private System.Windows.Forms.Button Triple_SurfaceIntegral;
         private System.Windows.Forms.Button ChemArrows;
         private System.Windows.Forms.Button Infinity;
-        private System.Windows.Forms.Button NotProvable;
+        private System.Windows.Forms.Button Hotkey1;
         private System.Windows.Forms.Button SubScript;
         public System.Windows.Forms.Button SingleIntegral;
         private System.Windows.Forms.Button SuperScript;
