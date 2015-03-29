@@ -75,7 +75,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tests\testsort.cs" />
     <EmbeddedResource Include="Greek.resx">
       <DependentUpon>Greek.cs</DependentUpon>
     </EmbeddedResource>

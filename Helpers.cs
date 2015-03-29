@@ -10,6 +10,7 @@ namespace MathKeyBoard
     {
         public buttonCounter btnctr;
         public List<buttonCounter> buttons = new List<buttonCounter>(4);
+        public List<buttonCounter> buttonsShort = new List<buttonCounter>(4);
 
 
 
@@ -17,10 +18,11 @@ namespace MathKeyBoard
         {
             for (int i = 0; i < 4; i++)
             {
+                buttonsShort.Add(new buttonCounter("", 0));
                 buttons.Add(new buttonCounter("", 0));
             }
         }
-         
+
 
         public bool FormOpen(String name)
         {
@@ -45,41 +47,12 @@ namespace MathKeyBoard
                 {
                     return OpenForm;
                 }
-
-
-
             }
             return ((Form)sender);
 
         }
 
-        //public Panel getOpenPanel(object sender, String name)
-        //{
-
-        //    foreach (Panel OpenPanel in Application.OpenForms)
-        //    {
-        //        if (OpenPanel.Name == name)
-        //        {
-        //            return OpenPanel;
-        //        }
-
-
-
-        //    }
-        //    return ((Panel)sender);
-
-        //}
-
-        //test
-        //check is symbol.buttontext is in List<buttons>
-        //if yes symbol.counter++
-        //if no 
-        //create symbol
-        //add to list
-        //and symbol.counter++
-        //updating text updates list names
-        //some keys dont use sendkeys the same way
-        //sorts
+       
         public void updateHotkeys(string btn)
         {
             bool inList = false;
@@ -98,33 +71,35 @@ namespace MathKeyBoard
                 buttons.Add(symbol);
             }
 
+            
+        }
+
+        public void updateButtonsShortList()
+        {
+
             buttons.Sort(new Comparison<buttonCounter>((x, y) => y.getCounter().CompareTo(x.getCounter())));
+            for (int i = 0; i < 4; i++)
+            {
+                buttonsShort[i]=buttons[i];
+            }
+
+        
         }
 
         public void updateHotkeyDisplay(object sender)
         {
-            Form mainForm = getOpenForm(sender, "MainKeyboard");
-            //Panel hotKeyPanel = getOpenPanel(mainForm, "HotkeyPanel");
+            updateButtonsShortList();
+            Form mainForm = getOpenForm(sender, "MainKeyboard");            
             var hotKeyPanel = mainForm.Controls.Find("HotkeyPanel", false);
-            Button hotKey1 = (Button)hotKeyPanel[0].Controls[0];
-            Button hotKey2 = (Button)hotKeyPanel[0].Controls[1];
-            Button hotKey3 = (Button)hotKeyPanel[0].Controls[2];
-            Button hotKey4 = (Button)hotKeyPanel[0].Controls[3];
-            hotKey1.Text = buttons[0].getName();
-            hotKey2.Text = buttons[1].getName();
-            hotKey3.Text = buttons[2].getName();
-            hotKey4.Text = buttons[3].getName();
 
-            
+            int i = 0;
+            foreach (Button b in hotKeyPanel[0].Controls)
+            {
+                b.Text = buttonsShort[i].getName();
+                i++;
+            }
 
 
-
-            //foreach (Button b in hotKeyPanel.Container.Components)
-            //{
-            //    Button a = b;
-
-            //}
-        
 
         }
     }
