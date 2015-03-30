@@ -97,6 +97,7 @@ namespace MathKeyBoard
             {
                 b.Text = buttonsShort[i].getName();
                 i++;
+                //can i send to githun?
             }
 
 
