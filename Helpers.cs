@@ -92,10 +92,13 @@ namespace MathKeyBoard
             Form mainForm = getOpenForm(sender, "MainKeyboard");            
             var hotKeyPanel = mainForm.Controls.Find("HotkeyPanel", false);
 
-            int i = 0;
-            foreach (Button b in hotKeyPanel[0].Controls)
+            //int i = 0;
+            //foreach (Button b in hotKeyPanel[0].Controls)
+            for (int i = 0; i < 4; i++ )
             {
-                b.Text = buttonsShort[i].getName();
+               // Button b = (Button)hotKeyPanel[0].Controls[i];
+                hotKeyPanel[0].Controls[i].Text = buttonsShort[i].getName();
+                //b.Text = buttonsShort[i].getName();
                 i++;
             }
 
