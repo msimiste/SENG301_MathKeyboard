@@ -100,6 +100,7 @@ namespace MathKeyBoard
                 hotKeyPanel[0].Controls[i].Text = buttonsShort[i].getName();
                 //b.Text = buttonsShort[i].getName();
                 i++;
+                //can i send to githun?
             }
 
 
