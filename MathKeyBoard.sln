@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathKeyBoard", "MathKeyBoard.csproj", "{E81CC893-45D8-400F-8C36-DCE280E4F749}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathKeyBoardTests", "..\MathKeyBoardTests\MathKeyBoardTests.csproj", "{C0A59EA0-883F-4AD6-B589-DBA1CEE35209}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathKeyBoardTests", "MathKeyBoardTests\MathKeyBoardTests.csproj", "{C0A59EA0-883F-4AD6-B589-DBA1CEE35209}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
