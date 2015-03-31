@@ -522,7 +522,7 @@
             this.LInkToGreek.Size = new System.Drawing.Size(80, 50);
             this.LInkToGreek.TabIndex = 14;
             this.LInkToGreek.UseVisualStyleBackColor = false;
-            this.LInkToGreek.Click += new System.EventHandler(this.LInkToGreek_Click);
+            this.LInkToGreek.Click += new System.EventHandler(this.LinkToGreek_Click);
             // 
             // SetTheory_Logic
             // 
@@ -581,7 +581,9 @@
         private System.Windows.Forms.Button EmptySet;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button LInkToGreek;
-        private Helpers Help1 = new Helpers();
+        
+        //private Helpers Help1 = new Helpers();
+        
         private System.Windows.Forms.HelpProvider helpProvider1;
         //public Greek Greek1;
        

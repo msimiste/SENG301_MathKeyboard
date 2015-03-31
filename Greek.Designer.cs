@@ -604,7 +604,7 @@
         private System.Windows.Forms.Button Gamma_Lower;
         private System.Windows.Forms.Panel MainButtonPanel;
         private System.Windows.Forms.Button LinkToSetTheory;
-        private Helpers Help1 = new Helpers();
+        //private Helpers Help1 = new Helpers();
         
         //private SetTheory_Logic SetTheory1 = new SetTheory_Logic();
     }

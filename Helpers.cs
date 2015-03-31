@@ -8,18 +8,17 @@ namespace MathKeyBoard
 {
     public partial class Helpers
     {
-        public buttonCounter btnctr;
+
         public List<buttonCounter> buttons = new List<buttonCounter>(4);
-        public List<buttonCounter> buttonsShort = new List<buttonCounter>(4);
 
-
-
+        
         public Helpers()
         {
             for (int i = 0; i < 4; i++)
             {
-                buttonsShort.Add(new buttonCounter("", 0));
+
                 buttons.Add(new buttonCounter("", 0));
+                
             }
         }
 
@@ -52,7 +51,7 @@ namespace MathKeyBoard
 
         }
 
-       
+
         public void updateHotkeys(string btn)
         {
             bool inList = false;
@@ -71,36 +70,20 @@ namespace MathKeyBoard
                 buttons.Add(symbol);
             }
 
-            
-        }
 
-        public void updateButtonsShortList()
-        {
 
             buttons.Sort(new Comparison<buttonCounter>((x, y) => y.getCounter().CompareTo(x.getCounter())));
-            for (int i = 0; i < 4; i++)
-            {
-                buttonsShort[i]=buttons[i];
-            }
-
-        
         }
+
 
         public void updateHotkeyDisplay(object sender)
         {
-            updateButtonsShortList();
-            Form mainForm = getOpenForm(sender, "MainKeyboard");            
-            var hotKeyPanel = mainForm.Controls.Find("HotkeyPanel", false);
 
-            //int i = 0;
-            //foreach (Button b in hotKeyPanel[0].Controls)
-            for (int i = 0; i < 4; i++ )
+            Form mainForm = getOpenForm(sender, "MainKeyboard");
+            var hotKeyPanel = mainForm.Controls.Find("HotkeyPanel", false);
+            for (int i = 0; i < 4; i++)
             {
-               // Button b = (Button)hotKeyPanel[0].Controls[i];
-                hotKeyPanel[0].Controls[i].Text = buttonsShort[i].getName();
-                //b.Text = buttonsShort[i].getName();
-                i++;
-                //can i send to githun?
+                hotKeyPanel[0].Controls[i].Text = buttons[i].getName();
             }
 
 

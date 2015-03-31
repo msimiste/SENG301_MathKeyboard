@@ -486,7 +486,7 @@
             this.Hotkey4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Hotkey4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Hotkey4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Hotkey4.Location = new System.Drawing.Point(240, 0);
+            this.Hotkey4.Location = new System.Drawing.Point(160, 0);
             this.Hotkey4.Name = "Hotkey4";
             this.Hotkey4.Size = new System.Drawing.Size(80, 50);
             this.Hotkey4.TabIndex = 24;
@@ -498,7 +498,7 @@
             this.Hotkey3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Hotkey3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Hotkey3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Hotkey3.Location = new System.Drawing.Point(160, 0);
+            this.Hotkey3.Location = new System.Drawing.Point(240, 0);
             this.Hotkey3.Name = "Hotkey3";
             this.Hotkey3.Size = new System.Drawing.Size(80, 50);
             this.Hotkey3.TabIndex = 25;
@@ -613,7 +613,7 @@
         public System.Windows.Forms.Button SingleIntegral;
         private System.Windows.Forms.Button SuperScript;
         private System.Windows.Forms.Button LinkToSetTheory;
-        Helpers Help1 = new Helpers();
+        public Helpers Help1 = new Helpers();
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button LInkToGreek;
         private System.Windows.Forms.Panel panel3;

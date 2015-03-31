@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace MathKeyBoard
 {
     public partial class MainKeyboard : Form
-    {
+    {     
         private String up;
         private String low;
         protected override CreateParams CreateParams
@@ -45,15 +45,10 @@ namespace MathKeyBoard
             low = newLowValue;
         }
 
-
-
-
         private void but_Click(object sender, EventArgs e)
         {
             SendKeys.Send(((Button)sender).Text);
         }
-
-
 
         private void LinkToSetTheory_Click(object sender, EventArgs e)
         {
@@ -116,5 +111,10 @@ namespace MathKeyBoard
         {
             SendKeys.Send("0307%(x)");
         }
+        public Helpers getHelp()
+        {
+            return this.Help1;    
+        }
+
     }
 }

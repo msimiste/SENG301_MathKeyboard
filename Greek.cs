@@ -11,6 +11,7 @@ namespace MathKeyBoard
 {
     public partial class Greek : Form
     {
+        private MainKeyboard tempForm;
 
         protected override CreateParams CreateParams
         {
@@ -27,7 +28,20 @@ namespace MathKeyBoard
         {
 
             InitializeComponent();
+            setTempForm();
         }
+
+        private void setTempForm()
+        {
+            foreach (Form tempMainKeyBoard in Application.OpenForms)
+            {
+                if (tempMainKeyBoard.Name == "MainKeyboard")
+                {
+                    tempForm = (MainKeyboard)tempMainKeyBoard;
+                }
+            }
+        }
+
 
         private void Greek_Load(object sender, EventArgs e)
         {
@@ -37,13 +51,13 @@ namespace MathKeyBoard
         private void button1_Click(object sender, EventArgs e)
         {
             SendKeys.Send(((Button)sender).Text);
-            Help1.updateHotkeys(((Button)sender).Text); // this in mainkeyboard after a sendkeys
-            Help1.updateHotkeyDisplay(this.ParentForm);
+            tempForm.getHelp().updateHotkeys(((Button)sender).Text); // this in mainkeyboard after a sendkeys
+            tempForm.getHelp().updateHotkeyDisplay(this.ParentForm);
         }
 
         private void LinkToSetTheory_Click(object sender, EventArgs e)
         {
-            if (Help1.FormOpen("SetTheory_Logic"))
+            if (tempForm.getHelp().FormOpen("SetTheory_Logic"))
             {
                 SetTheory_Logic SetTheory1 = new SetTheory_Logic();
                 SetTheory1.Show();
@@ -51,7 +65,7 @@ namespace MathKeyBoard
             }
 
             else
-                Help1.getOpenForm(this.ParentForm, "SetTheory_Logic").Show();
+                tempForm.getHelp().getOpenForm(this.ParentForm, "SetTheory_Logic").Show();
 
 
         }

@@ -8,12 +8,12 @@ namespace MathKeyBoard
     public class buttonCounter
     {
         private String name = "";
-        private int counter = 0;
+        private int count = 0;
 
         public buttonCounter(String aName, int aCounter)
         {
             name = aName;
-            counter = aCounter;
+            count = aCounter;
         }
 
         public String getName()
@@ -23,12 +23,12 @@ namespace MathKeyBoard
 
         public int getCounter()
         {
-            return counter;
+            return count;
         }
 
         public void incCounter(int num)
         {
-            counter += 1;
+            count += 1;
         }
     }
 }
