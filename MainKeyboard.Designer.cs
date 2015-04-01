@@ -602,7 +602,9 @@
         private System.Windows.Forms.Button Hotkey2;
         private System.Windows.Forms.Button Falsum;
         private System.Windows.Forms.Button MinusPlus;
-        private System.Windows.Forms.Button Square;
+        public System.Windows.Forms.Button Square;// this will be changed to private when product is released, is currently public
+        // solely for testing purposes
+
         private System.Windows.Forms.Button Plus_Minus;
         private System.Windows.Forms.Button DotProduct;
         private System.Windows.Forms.Button Triple_SurfaceIntegral;

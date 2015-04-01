@@ -9,12 +9,12 @@ namespace MathKeyBoard
     public partial class Helpers
     {
 
-        public List<buttonCounter> buttons = new List<buttonCounter>(4);
+        public List<buttonCounter> buttons = new List<buttonCounter>(5);
 
         
         public Helpers()
         {
-            for (int i = 0; i < 4; i++)
+            for (int i = 1; i < 5; i++)
             {
 
                 buttons.Add(new buttonCounter("", 0));
@@ -71,7 +71,7 @@ namespace MathKeyBoard
             }
 
 
-
+            
             buttons.Sort(new Comparison<buttonCounter>((x, y) => y.getCounter().CompareTo(x.getCounter())));
         }
 
@@ -80,10 +80,12 @@ namespace MathKeyBoard
         {
 
             Form mainForm = getOpenForm(sender, "MainKeyboard");
-            var hotKeyPanel = mainForm.Controls.Find("HotkeyPanel", false);
-            for (int i = 0; i < 4; i++)
+           var hotKeyPanel = mainForm.Controls.Find("HotkeyPanel", false);
+           
+            for (int i = 0; i <4; i++)
             {
                 hotKeyPanel[0].Controls[i].Text = buttons[i].getName();
+               
             }
 
 

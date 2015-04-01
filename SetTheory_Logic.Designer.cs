@@ -80,7 +80,7 @@
             this.Biconditional.TabIndex = 6;
             this.Biconditional.Text = "↔";
             this.Biconditional.UseVisualStyleBackColor = false;
-            this.Biconditional.Click += new System.EventHandler(this.button1_Click_1);
+            this.Biconditional.Click += new System.EventHandler(this.button1_Click);
             // 
             // Universal
             // 
@@ -95,7 +95,7 @@
             this.Universal.TabIndex = 0;
             this.Universal.Text = "∀";
             this.Universal.UseVisualStyleBackColor = false;
-            this.Universal.Click += new System.EventHandler(this.button1_Click_1);
+            this.Universal.Click += new System.EventHandler(this.button1_Click);
             // 
             // Conditional
             // 
@@ -110,7 +110,7 @@
             this.Conditional.TabIndex = 7;
             this.Conditional.Text = "→";
             this.Conditional.UseVisualStyleBackColor = false;
-            this.Conditional.Click += new System.EventHandler(this.button1_Click_1);
+            this.Conditional.Click += new System.EventHandler(this.button1_Click);
             // 
             // Existential
             // 
@@ -125,7 +125,7 @@
             this.Existential.TabIndex = 1;
             this.Existential.Text = "∃";
             this.Existential.UseVisualStyleBackColor = false;
-            this.Existential.Click += new System.EventHandler(this.button1_Click_1);
+            this.Existential.Click += new System.EventHandler(this.button1_Click);
             // 
             // NotProvable
             // 
@@ -140,7 +140,7 @@
             this.NotProvable.TabIndex = 12;
             this.NotProvable.Text = "⊬";
             this.NotProvable.UseVisualStyleBackColor = false;
-            this.NotProvable.Click += new System.EventHandler(this.button1_Click_1);
+            this.NotProvable.Click += new System.EventHandler(this.button1_Click);
             // 
             // negation
             // 
@@ -155,7 +155,7 @@
             this.negation.TabIndex = 2;
             this.negation.Text = "¬";
             this.negation.UseVisualStyleBackColor = false;
-            this.negation.Click += new System.EventHandler(this.button1_Click_1);
+            this.negation.Click += new System.EventHandler(this.button1_Click);
             // 
             // Provable
             // 
@@ -170,7 +170,7 @@
             this.Provable.TabIndex = 8;
             this.Provable.Text = "⊢";
             this.Provable.UseVisualStyleBackColor = false;
-            this.Provable.Click += new System.EventHandler(this.button1_Click_1);
+            this.Provable.Click += new System.EventHandler(this.button1_Click);
             // 
             // brackets
             // 
@@ -200,7 +200,7 @@
             this.Verum.TabIndex = 10;
             this.Verum.Text = "⊤";
             this.Verum.UseVisualStyleBackColor = false;
-            this.Verum.Click += new System.EventHandler(this.button1_Click_1);
+            this.Verum.Click += new System.EventHandler(this.button1_Click);
             // 
             // Conjunction
             // 
@@ -215,7 +215,7 @@
             this.Conjunction.TabIndex = 4;
             this.Conjunction.Text = "∧";
             this.Conjunction.UseVisualStyleBackColor = false;
-            this.Conjunction.Click += new System.EventHandler(this.button1_Click_1);
+            this.Conjunction.Click += new System.EventHandler(this.button1_Click);
             // 
             // Entails
             // 
@@ -230,7 +230,7 @@
             this.Entails.TabIndex = 9;
             this.Entails.Text = "⊨";
             this.Entails.UseVisualStyleBackColor = false;
-            this.Entails.Click += new System.EventHandler(this.button1_Click_1);
+            this.Entails.Click += new System.EventHandler(this.button1_Click);
             // 
             // Disjunction
             // 
@@ -245,7 +245,7 @@
             this.Disjunction.TabIndex = 5;
             this.Disjunction.Text = "∨";
             this.Disjunction.UseVisualStyleBackColor = false;
-            this.Disjunction.Click += new System.EventHandler(this.button1_Click_1);
+            this.Disjunction.Click += new System.EventHandler(this.button1_Click);
             // 
             // Falsum
             // 
@@ -260,7 +260,7 @@
             this.Falsum.TabIndex = 11;
             this.Falsum.Text = "⊥";
             this.Falsum.UseVisualStyleBackColor = false;
-            this.Falsum.Click += new System.EventHandler(this.button1_Click_1);
+            this.Falsum.Click += new System.EventHandler(this.button1_Click);
             // 
             // DoesNotEntail
             // 
@@ -275,7 +275,7 @@
             this.DoesNotEntail.TabIndex = 13;
             this.DoesNotEntail.Text = "⊭";
             this.DoesNotEntail.UseVisualStyleBackColor = false;
-            this.DoesNotEntail.Click += new System.EventHandler(this.button1_Click_1);
+            this.DoesNotEntail.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -325,7 +325,7 @@
             this.NaturalNumbers.TabIndex = 27;
             this.NaturalNumbers.Text = "ℕ";
             this.NaturalNumbers.UseVisualStyleBackColor = false;
-            this.NaturalNumbers.Click += new System.EventHandler(this.button1_Click_1);
+            this.NaturalNumbers.Click += new System.EventHandler(this.button1_Click);
             // 
             // Integers
             // 
@@ -338,7 +338,7 @@
             this.Integers.TabIndex = 26;
             this.Integers.Text = "ℤ";
             this.Integers.UseVisualStyleBackColor = false;
-            this.Integers.Click += new System.EventHandler(this.button1_Click_1);
+            this.Integers.Click += new System.EventHandler(this.button1_Click);
             // 
             // RealNumbers
             // 
@@ -351,7 +351,7 @@
             this.RealNumbers.TabIndex = 25;
             this.RealNumbers.Text = "ℝ";
             this.RealNumbers.UseVisualStyleBackColor = false;
-            this.RealNumbers.Click += new System.EventHandler(this.button1_Click_1);
+            this.RealNumbers.Click += new System.EventHandler(this.button1_Click);
             // 
             // RationalNumbers
             // 
@@ -364,7 +364,7 @@
             this.RationalNumbers.TabIndex = 24;
             this.RationalNumbers.Text = "ℚ";
             this.RationalNumbers.UseVisualStyleBackColor = false;
-            this.RationalNumbers.Click += new System.EventHandler(this.button1_Click_1);
+            this.RationalNumbers.Click += new System.EventHandler(this.button1_Click);
             // 
             // NotSubset
             // 
@@ -377,7 +377,7 @@
             this.NotSubset.TabIndex = 23;
             this.NotSubset.Text = "⊄";
             this.NotSubset.UseVisualStyleBackColor = false;
-            this.NotSubset.Click += new System.EventHandler(this.button1_Click_1);
+            this.NotSubset.Click += new System.EventHandler(this.button1_Click);
             // 
             // NotSuperset
             // 
@@ -390,7 +390,7 @@
             this.NotSuperset.TabIndex = 22;
             this.NotSuperset.Text = "⊅";
             this.NotSuperset.UseVisualStyleBackColor = false;
-            this.NotSuperset.Click += new System.EventHandler(this.button1_Click_1);
+            this.NotSuperset.Click += new System.EventHandler(this.button1_Click);
             // 
             // Subset
             // 
@@ -403,7 +403,7 @@
             this.Subset.TabIndex = 21;
             this.Subset.Text = "⊂";
             this.Subset.UseVisualStyleBackColor = false;
-            this.Subset.Click += new System.EventHandler(this.button1_Click_1);
+            this.Subset.Click += new System.EventHandler(this.button1_Click);
             // 
             // SuperSet
             // 
@@ -416,7 +416,7 @@
             this.SuperSet.TabIndex = 20;
             this.SuperSet.Text = "⊃";
             this.SuperSet.UseVisualStyleBackColor = false;
-            this.SuperSet.Click += new System.EventHandler(this.button1_Click_1);
+            this.SuperSet.Click += new System.EventHandler(this.button1_Click);
             // 
             // NotElement
             // 
@@ -429,7 +429,7 @@
             this.NotElement.TabIndex = 19;
             this.NotElement.Text = "∉";
             this.NotElement.UseVisualStyleBackColor = false;
-            this.NotElement.Click += new System.EventHandler(this.button1_Click_1);
+            this.NotElement.Click += new System.EventHandler(this.button1_Click);
             // 
             // Element
             // 
@@ -443,7 +443,7 @@
             this.Element.TabIndex = 18;
             this.Element.Text = "∈";
             this.Element.UseVisualStyleBackColor = false;
-            this.Element.Click += new System.EventHandler(this.button1_Click_1);
+            this.Element.Click += new System.EventHandler(this.button1_Click);
             // 
             // Union
             // 
@@ -456,7 +456,7 @@
             this.Union.TabIndex = 17;
             this.Union.Text = "⋃";
             this.Union.UseVisualStyleBackColor = false;
-            this.Union.Click += new System.EventHandler(this.button1_Click_1);
+            this.Union.Click += new System.EventHandler(this.button1_Click);
             // 
             // Intersection
             // 
@@ -469,7 +469,7 @@
             this.Intersection.TabIndex = 16;
             this.Intersection.Text = "⋂";
             this.Intersection.UseVisualStyleBackColor = false;
-            this.Intersection.Click += new System.EventHandler(this.button1_Click_1);
+            this.Intersection.Click += new System.EventHandler(this.button1_Click);
             // 
             // CurlyBrackets
             // 
@@ -495,7 +495,7 @@
             this.EmptySet.TabIndex = 14;
             this.EmptySet.Text = "∅";
             this.EmptySet.UseVisualStyleBackColor = false;
-            this.EmptySet.Click += new System.EventHandler(this.button1_Click_1);
+            this.EmptySet.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -551,7 +551,9 @@
 
 
         private System.Windows.Forms.Button Biconditional;
-        private System.Windows.Forms.Button Universal;
+        public System.Windows.Forms.Button Universal; // this will be changed to private when product is released, is currently public
+        // solely for testing purposes
+
         private System.Windows.Forms.Button Conditional;
         private System.Windows.Forms.Button Existential;
         private System.Windows.Forms.Button NotProvable;

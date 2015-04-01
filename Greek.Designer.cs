@@ -84,6 +84,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.Omega_Upper);
             this.panel1.Controls.Add(this.Psi_Lower);
             this.panel1.Controls.Add(this.Chi_Lower);
             this.panel1.Controls.Add(this.Omega_Lower);
@@ -106,7 +107,6 @@
             this.panel1.Controls.Add(this.Gamma_Lower);
             this.panel1.Controls.Add(this.Beta_Lower);
             this.panel1.Controls.Add(this.Alpha_lower);
-            this.panel1.Controls.Add(this.Omega_Upper);
             this.panel1.Controls.Add(this.Psi_Upper);
             this.panel1.Controls.Add(this.Xi_Upper);
             this.panel1.Controls.Add(this.Phi_Upper);
@@ -559,8 +559,7 @@
             this.Controls.Add(this.MainButtonPanel);
             this.Controls.Add(this.panel1);
             this.Name = "Greek";
-            this.Text = " Greek";
-            this.Load += new System.EventHandler(this.Greek_Load);
+            this.Text = "Greek";            
             this.panel1.ResumeLayout(false);
             this.MainButtonPanel.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -575,7 +574,9 @@
         private System.Windows.Forms.Button Theta_upper;
         private System.Windows.Forms.Button Delta_upper;
         private System.Windows.Forms.Button Xi_Upper;
-        private System.Windows.Forms.Button Phi_Upper;
+        public System.Windows.Forms.Button Phi_Upper;// this will be changed to private when product is released, is currently public
+        // solely for testing purposes
+
         private System.Windows.Forms.Button Sigma_upper;
         private System.Windows.Forms.Button Pi_Upper;
         private System.Windows.Forms.Button Beta_Lower;

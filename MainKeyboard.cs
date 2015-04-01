@@ -13,6 +13,7 @@ namespace MathKeyBoard
     {     
         private String up;
         private String low;
+        public String  tempText; // This variable is created solely for testing purposes
         protected override CreateParams CreateParams
         {
             get
@@ -44,10 +45,20 @@ namespace MathKeyBoard
         {
             low = newLowValue;
         }
+        
 
-        private void but_Click(object sender, EventArgs e)
+        /* Since there is no known way to "capture" the value sent by SendKeys, the variable tempText captures what would be sent
+            additionally, the method but_Click will be private when final product is released, 
+            but_click is public solely for testing purposes.
+         */
+        public void but_Click(object sender, EventArgs e)
         {
-            SendKeys.Send(((Button)sender).Text);
+            tempText = ((Button)sender).Text; // This variable is used only for testing purposes, as observed below, the value tempText is
+                                              // the same value send by the method SendKeys
+
+             SendKeys.SendWait(((Button)sender).Text); // This code was changed to "SendWait" soley for testing purposes, released product would
+                                                       // use the method "SendKeys.Send() in place of SendKeys.SendWait()"
+              
         }
 
         private void LinkToSetTheory_Click(object sender, EventArgs e)
@@ -69,7 +80,7 @@ namespace MathKeyBoard
 
         private void LInkToGreek_Click(object sender, EventArgs e)
         {
-            this.panel2.BackColor = System.Drawing.Color.DarkOrange;
+            //this.panel2.BackColor = System.Drawing.Color.DarkOrange;
             if (Help1.FormOpen("Greek"))
             {
                 Greek Greek1 = new Greek();
@@ -115,6 +126,5 @@ namespace MathKeyBoard
         {
             return this.Help1;    
         }
-
     }
 }
