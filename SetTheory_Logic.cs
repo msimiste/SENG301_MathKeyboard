@@ -15,6 +15,7 @@ namespace MathKeyBoard
     public partial class SetTheory_Logic : Form
     {
         private MainKeyboard tempForm;
+        public String tempText; // This variable is created solely for testing purposes
         protected override CreateParams CreateParams
         {
             get
@@ -30,7 +31,7 @@ namespace MathKeyBoard
             setTempForm();  // set tempForm in order to have access to the Helpers Class within
         }
 
-        private void setTempForm()
+        public void setTempForm()
         {
             foreach (Form tempMainKeyBoard in Application.OpenForms)
             {
@@ -41,6 +42,14 @@ namespace MathKeyBoard
             }
         }
 
+        public void openFormForTest() // used for testing purposes
+        {
+            tempForm = new MainKeyboard();
+            tempForm.Show();
+            this.Show();
+        }
+
+
 
         private void Logic_Load(object sender, EventArgs e)
         {
@@ -50,13 +59,34 @@ namespace MathKeyBoard
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+
+        /* Since there is no known way to "capture" the value sent by SendKeys, the variable tempText captures what would be sent
+additionally, the method button1_Click will be private when final product is released, 
+button1_Click1 is public solely for testing purposes.
+*/
+        public void button1_Click(object sender, EventArgs e)
         {
-            SendKeys.Send(((Button)sender).Text);        
-            
-            tempForm.getHelp().updateHotkeys(((Button)sender).Text); // this in mainkeyboard after a sendkeys
-            tempForm.getHelp().updateHotkeyDisplay(this.ParentForm);
+            tempText = ((Button)sender).Text; // This variable is used only for testing purposes, as observed below, the value tempText is
+            // the same value send by the method SendKeys
+
+            SendKeys.SendWait(((Button)sender).Text); // This code was changed to "SendWait" soley for testing purposes, released product would
+            // use the method "SendKeys.Send() in place of SendKeys.SendWait()"
+
+            //tempForm.getHelp().updateHotkeys(((Button)sender).Text); // this in mainkeyboard after a sendkeys
+            //tempForm.getHelp().updateHotkeyDisplay(this.ParentForm);
         }
+
+
+  /*!!!!!!!!!!!!!!!!! Replace with this when product is released!!!!!!!!!!!!!!!!!!
+         */
+
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    SendKeys.Send(((Button)sender).Text);        
+            
+        //    tempForm.getHelp().updateHotkeys(((Button)sender).Text); // this in mainkeyboard after a sendkeys
+        //    tempForm.getHelp().updateHotkeyDisplay(this.ParentForm);
+        //}
 
  
         private void brackets_Click(object sender, EventArgs e)
@@ -84,6 +114,5 @@ namespace MathKeyBoard
 
             
         }
-
     }
 }
