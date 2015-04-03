@@ -5,6 +5,8 @@ using System.Text;
 
 namespace MathKeyBoard
 {
+    // this class was created in order to monitor the frequency of button presses on the
+    // various keyboards, as C# buttons do not have a native counter attribute
     public class buttonCounter
     {
         private String name = "";
@@ -28,7 +30,7 @@ namespace MathKeyBoard
 
         public void incCounter(int num)
         {
-            count += 1;
+            count += num;
         }
     }
 }

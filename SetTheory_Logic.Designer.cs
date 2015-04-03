@@ -10,7 +10,7 @@
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>        /// 
         protected override void Dispose(bool disposing)
         {
             //this.Hide();
@@ -505,7 +505,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(85, 55);
             this.panel2.TabIndex = 17;
-           // this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // LInkToGreek
             // 
@@ -533,17 +532,17 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(374, 464);
+            this.MinimumSize = new System.Drawing.Size(374, 464);
             this.Name = "SetTheory_Logic";
             this.Padding = new System.Windows.Forms.Padding(3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "SetTheory_Logic";
-            this.TopMost = true;
-            this.Load += new System.EventHandler(this.Logic_Load);
+            this.TopMost = true;        
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
 
         #endregion
@@ -582,16 +581,7 @@
         private System.Windows.Forms.Button CurlyBrackets;
         private System.Windows.Forms.Button EmptySet;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button LInkToGreek;
-        
-        //private Helpers Help1 = new Helpers();
-        
+        private System.Windows.Forms.Button LInkToGreek;        
         private System.Windows.Forms.HelpProvider helpProvider1;
-        //public Greek Greek1;
-       
-       
-
-
-
-    }
+     }
 }

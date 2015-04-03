@@ -35,6 +35,7 @@
             this.BAR = new System.Windows.Forms.Button();
             this.Plus_Minus = new System.Windows.Forms.Button();
             this.ChemArrows = new System.Windows.Forms.Button();
+            this.SubScript = new System.Windows.Forms.Button();
             this.DotProduct = new System.Windows.Forms.Button();
             this.PartialDerivative = new System.Windows.Forms.Button();
             this.DOT = new System.Windows.Forms.Button();
@@ -53,7 +54,6 @@
             this.Square = new System.Windows.Forms.Button();
             this.Triple_SurfaceIntegral = new System.Windows.Forms.Button();
             this.Infinity = new System.Windows.Forms.Button();
-            this.SubScript = new System.Windows.Forms.Button();
             this.SuperScript = new System.Windows.Forms.Button();
             this.HotkeyPanel = new System.Windows.Forms.Panel();
             this.Hotkey1 = new System.Windows.Forms.Button();
@@ -77,6 +77,7 @@
             this.panel1.Controls.Add(this.BAR);
             this.panel1.Controls.Add(this.Plus_Minus);
             this.panel1.Controls.Add(this.ChemArrows);
+            this.panel1.Controls.Add(this.SubScript);
             this.panel1.Controls.Add(this.DotProduct);
             this.panel1.Controls.Add(this.PartialDerivative);
             this.panel1.Controls.Add(this.DOT);
@@ -95,7 +96,6 @@
             this.panel1.Controls.Add(this.Square);
             this.panel1.Controls.Add(this.Triple_SurfaceIntegral);
             this.panel1.Controls.Add(this.Infinity);
-            this.panel1.Controls.Add(this.SubScript);
             this.panel1.Controls.Add(this.SuperScript);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.MaximumSize = new System.Drawing.Size(320, 800);
@@ -159,6 +159,22 @@
             this.ChemArrows.Text = "⇋";
             this.ChemArrows.UseVisualStyleBackColor = false;
             this.ChemArrows.Click += new System.EventHandler(this.but_Click);
+            // 
+            // SubScript
+            // 
+            this.SubScript.AutoSize = true;
+            this.SubScript.BackColor = System.Drawing.Color.Black;
+            this.SubScript.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubScript.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SubScript.Location = new System.Drawing.Point(0, 150);
+            this.SubScript.MaximumSize = new System.Drawing.Size(100, 75);
+            this.SubScript.Name = "SubScript";
+            this.SubScript.Size = new System.Drawing.Size(80, 50);
+            this.SubScript.TabIndex = 7;
+            this.SubScript.Text = "sub\r\nscript";
+            this.SubScript.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.SubScript.UseVisualStyleBackColor = false;
+            this.SubScript.Click += new System.EventHandler(this.SubScript_Click);
             // 
             // DotProduct
             // 
@@ -410,29 +426,13 @@
             this.Infinity.UseVisualStyleBackColor = false;
             this.Infinity.Click += new System.EventHandler(this.but_Click);
             // 
-            // SubScript
-            // 
-            this.SubScript.AutoSize = true;
-            this.SubScript.BackColor = System.Drawing.Color.Black;
-            this.SubScript.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubScript.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SubScript.Location = new System.Drawing.Point(1, 100);
-            this.SubScript.MaximumSize = new System.Drawing.Size(100, 75);
-            this.SubScript.Name = "SubScript";
-            this.SubScript.Size = new System.Drawing.Size(80, 50);
-            this.SubScript.TabIndex = 7;
-            this.SubScript.Text = "sub\r\nscript";
-            this.SubScript.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.SubScript.UseVisualStyleBackColor = false;
-            this.SubScript.Click += new System.EventHandler(this.but_Click);
-            // 
             // SuperScript
             // 
             this.SuperScript.AutoSize = true;
             this.SuperScript.BackColor = System.Drawing.Color.Black;
             this.SuperScript.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SuperScript.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SuperScript.Location = new System.Drawing.Point(0, 150);
+            this.SuperScript.Location = new System.Drawing.Point(0, 100);
             this.SuperScript.MaximumSize = new System.Drawing.Size(100, 75);
             this.SuperScript.Name = "SuperScript";
             this.SuperScript.Size = new System.Drawing.Size(80, 50);
@@ -567,11 +567,12 @@
             this.Controls.Add(this.HotkeyPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(370, 494);
+            this.MinimumSize = new System.Drawing.Size(370, 494);
             this.Name = "MainKeyboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "MainKeyboard";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.MainKeyboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.HotkeyPanel.ResumeLayout(false);
@@ -615,7 +616,7 @@
         public System.Windows.Forms.Button SingleIntegral;
         private System.Windows.Forms.Button SuperScript;
         private System.Windows.Forms.Button LinkToSetTheory;
-        public Helpers Help1 = new Helpers();
+        public Helpers Help1 = new Helpers();    // must be public in order to give access to Helpers class
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button LInkToGreek;
         private System.Windows.Forms.Panel panel3;

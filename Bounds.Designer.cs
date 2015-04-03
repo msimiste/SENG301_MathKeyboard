@@ -79,8 +79,7 @@
             this.BoundsPanel.Location = new System.Drawing.Point(21, 38);
             this.BoundsPanel.Name = "BoundsPanel";
             this.BoundsPanel.Size = new System.Drawing.Size(226, 136);
-            this.BoundsPanel.TabIndex = 3;
-            this.BoundsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.BoundsPanel_Paint);
+            this.BoundsPanel.TabIndex = 3;          
             // 
             // LowerBound
             // 
@@ -126,8 +125,7 @@
             this.Controls.Add(this.ButtonsPanel);
             this.Controls.Add(this.BoundsPanel);
             this.Name = "Bounds";
-            this.Text = "Bounds";
-            this.Load += new System.EventHandler(this.Bounds_Load);
+            this.Text = "Bounds";           
             this.BoundsPanel.ResumeLayout(false);
             this.BoundsPanel.PerformLayout();
             this.ButtonsPanel.ResumeLayout(false);

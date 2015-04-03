@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Greek));
             this.Gamma_upper = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Omega_Upper = new System.Windows.Forms.Button();
             this.Psi_Lower = new System.Windows.Forms.Button();
             this.Chi_Lower = new System.Windows.Forms.Button();
             this.Omega_Lower = new System.Windows.Forms.Button();
@@ -54,7 +55,6 @@
             this.Gamma_Lower = new System.Windows.Forms.Button();
             this.Beta_Lower = new System.Windows.Forms.Button();
             this.Alpha_lower = new System.Windows.Forms.Button();
-            this.Omega_Upper = new System.Windows.Forms.Button();
             this.Psi_Upper = new System.Windows.Forms.Button();
             this.Xi_Upper = new System.Windows.Forms.Button();
             this.Phi_Upper = new System.Windows.Forms.Button();
@@ -120,6 +120,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(322, 400);
             this.panel1.TabIndex = 1;
+            // 
+            // Omega_Upper
+            // 
+            this.Omega_Upper.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Omega_Upper.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Omega_Upper.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Omega_Upper.Location = new System.Drawing.Point(240, 50);
+            this.Omega_Upper.Name = "Omega_Upper";
+            this.Omega_Upper.Size = new System.Drawing.Size(80, 50);
+            this.Omega_Upper.TabIndex = 9;
+            this.Omega_Upper.Text = "Ω";
+            this.Omega_Upper.UseVisualStyleBackColor = false;
+            this.Omega_Upper.Click += new System.EventHandler(this.button1_Click);
             // 
             // Psi_Lower
             // 
@@ -407,19 +420,6 @@
             this.Alpha_lower.UseVisualStyleBackColor = false;
             this.Alpha_lower.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Omega_Upper
-            // 
-            this.Omega_Upper.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Omega_Upper.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Omega_Upper.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Omega_Upper.Location = new System.Drawing.Point(240, 50);
-            this.Omega_Upper.Name = "Omega_Upper";
-            this.Omega_Upper.Size = new System.Drawing.Size(80, 50);
-            this.Omega_Upper.TabIndex = 9;
-            this.Omega_Upper.Text = "Ω";
-            this.Omega_Upper.UseVisualStyleBackColor = false;
-            this.Omega_Upper.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Psi_Upper
             // 
             this.Psi_Upper.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -558,8 +558,10 @@
             this.ClientSize = new System.Drawing.Size(342, 477);
             this.Controls.Add(this.MainButtonPanel);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(358, 515);
+            this.MinimumSize = new System.Drawing.Size(358, 515);
             this.Name = "Greek";
-            this.Text = "Greek";            
+            this.Text = "Greek";
             this.panel1.ResumeLayout(false);
             this.MainButtonPanel.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -604,9 +606,6 @@
         private System.Windows.Forms.Button Delta_Lower;
         private System.Windows.Forms.Button Gamma_Lower;
         private System.Windows.Forms.Panel MainButtonPanel;
-        private System.Windows.Forms.Button LinkToSetTheory;
-        //private Helpers Help1 = new Helpers();
-        
-        //private SetTheory_Logic SetTheory1 = new SetTheory_Logic();
+        private System.Windows.Forms.Button LinkToSetTheory;     
     }
 }
