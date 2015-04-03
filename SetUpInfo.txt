@@ -1,0 +1,17 @@
+******************Read Me********************
+
+Setup information:
+
+1. Download from sourceforge.net
+
+http://sourceforge.net/projects/mathkeyboard/?source=directory
+
+2. Choose open or save file
+3. Extract to a folder
+4. Run Setup.exe
+
+
+
+
+
+

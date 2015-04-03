@@ -1,0 +1,23 @@
+*****************************************Build Me******************************************************
+
+Git Steps:
+
+**assuming git is downloaded and installed**
+
+1. Create a new Folder " \myFolder" which will eventually contain your repository
+2. In Git Bash
+	- navigate to the newly created folder "\myFolder"
+	- type git init
+	- type git pull https://github.com/msimiste/SENG301_MathKeyboard
+	
+
+Visual Studio Steps:
+
+**assuming Visual Studio is downloaded and installed**
+
+1. within the folder "\myFolder" created in Git Steps (above)
+2. Run MathKeyBoard.sln (will open the solution in visual studio)
+3 Click Start (the green arrow below Build and Debug along the top menu in VS) or alternatively hit F5
+	- Math keyboard will appear in Debug Mode
+	- MathKeyBoard.exe will be built in "\myFolder\bin\Debug"
+4. To run the click MathKeyBoard.exe to run outside of Visual Studio
